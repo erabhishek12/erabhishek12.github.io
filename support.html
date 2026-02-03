@@ -1,0 +1,5666 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- SEO Meta Tags -->
+    <title>Support Abhishek Kumar | Buy Me a Coffee ☕</title>
+    <meta name="description" content="Support Abhishek Kumar's development journey. Your contribution helps create more amazing projects, tools, and open-source software.">
+    <meta name="keywords" content="Support Developer, Donate, Buy Me a Coffee, Abhishek Kumar, Open Source, Sponsorship">
+    <meta name="author" content="Abhishek Kumar">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Support Abhishek Kumar | Developer">
+    <meta property="og:description" content="Help fuel my coding journey with a coffee! ☕">
+    <meta property="og:image" content="assests/abhishek.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assests/abhishek.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <style>
+/* ============================================
+   SUPPORT DEVELOPER PAGE - PART 1
+   Premium Design with Amazing UI
+   
+   Author: Abhishek Kumar
+   Version: 1.0.0
+============================================ */
+
+/* ============================================
+   1. CSS VARIABLES
+============================================ */
+:root {
+    /* Primary Colors */
+    --primary-hue: 250;
+    --primary-color: hsl(250, 100%, 65%);
+    --primary-light: hsl(250, 100%, 75%);
+    --primary-dark: hsl(250, 100%, 55%);
+    
+    /* Accent Colors */
+    --secondary-color: hsl(200, 100%, 50%);
+    --accent-color: hsl(180, 100%, 50%);
+    --gold-color: #fbbf24;
+    --coffee-color: #c9a66b;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #00d4ff 100%);
+    --gradient-gold: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+    --gradient-coffee: linear-gradient(135deg, #c9a66b 0%, #8b6914 100%);
+    --gradient-silver: linear-gradient(135deg, #bdc3c7 0%, #2c3e50 100%);
+    --gradient-bronze: linear-gradient(135deg, #cd7f32 0%, #8b4513 100%);
+    --gradient-diamond: linear-gradient(135deg, #667eea 0%, #764ba2 25%, #f5576c 50%, #4facfe 75%, #00f2fe 100%);
+    --gradient-hero: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.1) 50%, rgba(0, 212, 255, 0.1) 100%);
+    --gradient-card: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+    
+    /* Background Colors */
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f9fc;
+    --bg-tertiary: #f0f2f5;
+    --bg-card: #ffffff;
+    --bg-glass: rgba(255, 255, 255, 0.7);
+    
+    /* Text Colors */
+    --text-primary: #1a1a2e;
+    --text-secondary: #4a4a68;
+    --text-tertiary: #6b6b8a;
+    --text-muted: #9999b3;
+    --text-light: #ffffff;
+    
+    /* Border Colors */
+    --border-color: rgba(0, 0, 0, 0.08);
+    --border-light: rgba(0, 0, 0, 0.05);
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.15);
+    --shadow-glow: 0 0 40px rgba(102, 126, 234, 0.3);
+    --shadow-gold: 0 10px 40px rgba(251, 191, 36, 0.3);
+    
+    /* Typography */
+    --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-mono: 'Fira Code', monospace;
+    
+    /* Font Sizes */
+    --fs-xs: 0.75rem;
+    --fs-sm: 0.875rem;
+    --fs-base: 1rem;
+    --fs-md: 1.125rem;
+    --fs-lg: 1.25rem;
+    --fs-xl: 1.5rem;
+    --fs-2xl: 2rem;
+    --fs-3xl: 2.5rem;
+    --fs-4xl: 3rem;
+    --fs-5xl: 4rem;
+    
+    /* Font Weights */
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fw-black: 900;
+    
+    /* Spacing */
+    --space-xs: 0.25rem;
+    --space-sm: 0.5rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2rem;
+    --space-2xl: 3rem;
+    --space-3xl: 4rem;
+    --space-4xl: 6rem;
+    
+    /* Border Radius */
+    --radius-sm: 0.375rem;
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
+    --radius-2xl: 1.5rem;
+    --radius-3xl: 2rem;
+    --radius-full: 9999px;
+    
+    /* Transitions */
+    --transition-fast: 0.15s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+    --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Z-Index */
+    --z-dropdown: 100;
+    --z-sticky: 200;
+    --z-fixed: 300;
+    --z-modal: 500;
+    --z-tooltip: 700;
+    
+    /* Glassmorphism */
+    --glass-bg: rgba(255, 255, 255, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.3);
+    --glass-blur: blur(20px);
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --bg-primary: #0a0a0f;
+    --bg-secondary: #12121a;
+    --bg-tertiary: #1a1a25;
+    --bg-card: #16161f;
+    --bg-glass: rgba(22, 22, 31, 0.8);
+    
+    --text-primary: #f5f5f7;
+    --text-secondary: #c5c5d0;
+    --text-tertiary: #9999a8;
+    --text-muted: #6b6b7a;
+    
+    --border-color: rgba(255, 255, 255, 0.08);
+    --border-light: rgba(255, 255, 255, 0.05);
+    
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 40px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.6);
+    
+    --glass-bg: rgba(22, 22, 31, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+/* ============================================
+   2. BASE & RESET STYLES
+============================================ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: var(--fs-base);
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--bg-primary);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    transition: background-color var(--transition-slow), color var(--transition-slow);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+::selection {
+    background: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color var(--transition-normal);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+button {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+input, textarea {
+    font-family: inherit;
+    border: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.section {
+    padding: 6rem 0;
+    position: relative;
+}
+
+/* ============================================
+   3. TYPOGRAPHY
+============================================ */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: var(--fw-bold);
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto var(--space-3xl);
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--gradient-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+    backdrop-filter: var(--glass-blur);
+}
+
+.section-title {
+    font-size: clamp(var(--fs-2xl), 4vw, var(--fs-4xl));
+    margin-bottom: var(--space-md);
+}
+
+.section-subtitle {
+    font-size: var(--fs-md);
+    color: var(--text-tertiary);
+}
+
+/* ============================================
+   4. BUTTONS
+============================================ */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-xl);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: var(--text-light);
+    box-shadow: 0 10px 40px rgba(102, 126, 234, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 50px rgba(102, 126, 234, 0.4);
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    animation: btn-shine 3s infinite;
+}
+
+@keyframes btn-shine {
+    0% { left: -100%; }
+    50%, 100% { left: 100%; }
+}
+
+.btn-secondary {
+    background: var(--bg-glass);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+    backdrop-filter: var(--glass-blur);
+}
+
+.btn-secondary:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.btn-coffee {
+    background: var(--gradient-coffee);
+    color: var(--text-light);
+    box-shadow: 0 10px 40px rgba(201, 166, 107, 0.3);
+}
+
+.btn-coffee:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 50px rgba(201, 166, 107, 0.5);
+}
+
+.btn-gold {
+    background: var(--gradient-gold);
+    color: #1a1a2e;
+    box-shadow: var(--shadow-gold);
+}
+
+.btn-gold:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 50px rgba(251, 191, 36, 0.5);
+}
+
+/* ============================================
+   5. NAVIGATION
+============================================ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    z-index: var(--z-fixed);
+    transition: all var(--transition-normal);
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--glass-bg);
+    backdrop-filter: var(--glass-blur);
+    border-bottom: 1px solid var(--border-color);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.header.scrolled::before {
+    opacity: 1;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    position: relative;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    z-index: 10;
+}
+
+.nav-logo i {
+    font-size: var(--fs-xl);
+    color: var(--coffee-color);
+}
+
+.nav-logo span {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.nav-link {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+    padding: var(--space-sm) var(--space-md);
+    border-radius: var(--radius-lg);
+    transition: all var(--transition-normal);
+}
+
+.nav-link:hover {
+    color: var(--primary-color);
+    background: var(--gradient-hero);
+}
+
+.nav-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    z-index: 10;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+    font-size: var(--fs-lg);
+    transition: all var(--transition-normal);
+    backdrop-filter: var(--glass-blur);
+}
+
+.theme-toggle:hover {
+    background: var(--bg-tertiary);
+    color: var(--primary-color);
+    transform: rotate(180deg);
+}
+
+.theme-toggle .fa-sun {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-moon {
+    display: none;
+}
+
+[data-theme="dark"] .theme-toggle .fa-sun {
+    display: block;
+    color: #fbbf24;
+}
+
+/* Back to Portfolio */
+.back-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    backdrop-filter: var(--glass-blur);
+    transition: all var(--transition-normal);
+}
+
+.back-btn:hover {
+    background: var(--bg-tertiary);
+    color: var(--primary-color);
+    transform: translateX(-5px);
+}
+
+/* Mobile Menu Toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: var(--space-sm);
+    cursor: pointer;
+}
+
+.nav-toggle span {
+    width: 24px;
+    height: 2px;
+    background: var(--text-primary);
+    border-radius: var(--radius-full);
+    transition: all var(--transition-normal);
+}
+
+/* ============================================
+   6. HERO SECTION
+============================================ */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Background */
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.6;
+    animation: blob-float 20s ease-in-out infinite;
+}
+
+.blob-1 {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.4), rgba(118, 75, 162, 0.3));
+    top: -200px;
+    right: -100px;
+}
+
+.blob-2 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.3), rgba(201, 166, 107, 0.2));
+    bottom: -150px;
+    left: -100px;
+    animation-delay: -7s;
+}
+
+.blob-3 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.3), rgba(102, 126, 234, 0.2));
+    top: 40%;
+    left: 30%;
+    animation-delay: -14s;
+}
+
+@keyframes blob-float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    25% { transform: translate(30px, -30px) scale(1.05); }
+    50% { transform: translate(-20px, 20px) scale(0.95); }
+    75% { transform: translate(-30px, -20px) scale(1.02); }
+}
+
+/* Floating Coffee Beans */
+.coffee-beans {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.coffee-bean {
+    position: absolute;
+    font-size: var(--fs-2xl);
+    opacity: 0.3;
+    animation: float-bean 15s ease-in-out infinite;
+}
+
+.coffee-bean:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+.coffee-bean:nth-child(2) { top: 20%; right: 10%; animation-delay: -3s; }
+.coffee-bean:nth-child(3) { top: 60%; left: 8%; animation-delay: -6s; }
+.coffee-bean:nth-child(4) { top: 70%; right: 5%; animation-delay: -9s; }
+.coffee-bean:nth-child(5) { top: 40%; left: 90%; animation-delay: -12s; }
+.coffee-bean:nth-child(6) { bottom: 10%; left: 15%; animation-delay: -2s; }
+.coffee-bean:nth-child(7) { bottom: 20%; right: 20%; animation-delay: -5s; }
+
+@keyframes float-bean {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-30px) rotate(180deg); }
+}
+
+/* Hearts Floating */
+.floating-hearts {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    font-size: var(--fs-lg);
+    color: #ef4444;
+    opacity: 0;
+    animation: float-heart 6s ease-in-out infinite;
+}
+
+.heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+.heart:nth-child(2) { left: 25%; animation-delay: 1s; }
+.heart:nth-child(3) { left: 40%; animation-delay: 2s; }
+.heart:nth-child(4) { left: 55%; animation-delay: 3s; }
+.heart:nth-child(5) { left: 70%; animation-delay: 4s; }
+.heart:nth-child(6) { left: 85%; animation-delay: 5s; }
+
+@keyframes float-heart {
+    0% {
+        bottom: -10%;
+        opacity: 0;
+        transform: scale(0.5) rotate(-15deg);
+    }
+    10% {
+        opacity: 0.8;
+    }
+    90% {
+        opacity: 0.8;
+    }
+    100% {
+        bottom: 110%;
+        opacity: 0;
+        transform: scale(1) rotate(15deg);
+    }
+}
+
+/* Grid Overlay */
+.grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+/* Hero Content */
+.hero-content {
+    text-align: center;
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    margin-bottom: var(--space-xl);
+    backdrop-filter: var(--glass-blur);
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4); }
+    50% { box-shadow: 0 0 0 15px rgba(102, 126, 234, 0); }
+}
+
+.hero-badge i {
+    color: var(--gold-color);
+    animation: wiggle 2s ease-in-out infinite;
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+.hero-badge span {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+}
+
+.hero-title {
+    font-size: clamp(var(--fs-3xl), 6vw, var(--fs-5xl));
+    font-weight: var(--fw-black);
+    margin-bottom: var(--space-lg);
+    line-height: 1.1;
+}
+
+.hero-title .highlight {
+    display: inline-block;
+    position: relative;
+}
+
+.hero-title .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 12px;
+    background: var(--gradient-gold);
+    opacity: 0.3;
+    border-radius: var(--radius-full);
+    z-index: -1;
+}
+
+.hero-coffee-icon {
+    display: inline-block;
+    font-size: 0.9em;
+    animation: steam 2s ease-in-out infinite;
+}
+
+@keyframes steam {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.hero-subtitle {
+    font-size: var(--fs-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-md);
+    margin-bottom: var(--space-2xl);
+}
+
+.hero-buttons .btn {
+    padding: var(--space-lg) var(--space-2xl);
+    font-size: var(--fs-md);
+}
+
+/* Quick Stats */
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-lg);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    backdrop-filter: var(--glass-blur);
+    min-width: 140px;
+    transition: all var(--transition-normal);
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.stat-icon {
+    font-size: var(--fs-2xl);
+    margin-bottom: var(--space-sm);
+}
+
+.stat-item:nth-child(1) .stat-icon { color: var(--coffee-color); }
+.stat-item:nth-child(2) .stat-icon { color: #ef4444; }
+.stat-item:nth-child(3) .stat-icon { color: var(--gold-color); }
+
+.stat-value {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.stat-label {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+}
+
+/* Scroll Indicator */
+.scroll-down {
+    position: absolute;
+    bottom: var(--space-2xl);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--text-tertiary);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.scroll-down .mouse {
+    width: 24px;
+    height: 38px;
+    border: 2px solid var(--text-tertiary);
+    border-radius: var(--radius-full);
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.scroll-down .wheel {
+    width: 4px;
+    height: 8px;
+    background: var(--primary-color);
+    border-radius: var(--radius-full);
+    animation: scroll-wheel 2s ease-in-out infinite;
+}
+
+@keyframes scroll-wheel {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(8px); opacity: 0.3; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(-10px); }
+}
+
+/* ============================================
+   7. SUPPORT TIERS SECTION
+============================================ */
+.tiers {
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.tiers::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Tiers Grid */
+.tiers-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+    position: relative;
+    z-index: 2;
+}
+
+/* Tier Card */
+.tier-card {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-xl);
+    text-align: center;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+}
+
+.tier-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--tier-color, var(--gradient-primary));
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+}
+
+.tier-card:hover::before {
+    transform: scaleX(1);
+}
+
+.tier-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: transparent;
+}
+
+/* Popular Badge */
+.tier-card.popular {
+    border-color: var(--gold-color);
+    transform: scale(1.05);
+    z-index: 3;
+}
+
+.tier-card.popular:hover {
+    transform: scale(1.05) translateY(-10px);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: var(--space-xs) var(--space-lg);
+    background: var(--gradient-gold);
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    color: #1a1a2e;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    box-shadow: var(--shadow-gold);
+    white-space: nowrap;
+}
+
+/* Tier Icon */
+.tier-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--space-lg);
+    background: var(--tier-gradient, var(--gradient-primary));
+    border-radius: 50%;
+    font-size: var(--fs-2xl);
+    color: var(--text-light);
+    position: relative;
+    box-shadow: 0 10px 30px var(--tier-shadow, rgba(102, 126, 234, 0.3));
+}
+
+/* Tier Colors */
+.tier-card.bronze {
+    --tier-color: var(--gradient-bronze);
+    --tier-gradient: var(--gradient-bronze);
+    --tier-shadow: rgba(205, 127, 50, 0.3);
+}
+
+.tier-card.silver {
+    --tier-color: var(--gradient-silver);
+    --tier-gradient: var(--gradient-silver);
+    --tier-shadow: rgba(189, 195, 199, 0.3);
+}
+
+.tier-card.gold {
+    --tier-color: var(--gradient-gold);
+    --tier-gradient: var(--gradient-gold);
+    --tier-shadow: rgba(251, 191, 36, 0.3);
+}
+
+.tier-card.diamond {
+    --tier-color: var(--gradient-diamond);
+    --tier-gradient: var(--gradient-diamond);
+    --tier-shadow: rgba(102, 126, 234, 0.3);
+}
+
+/* Diamond Sparkle */
+.tier-card.diamond .tier-icon::after {
+    content: '✨';
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    font-size: var(--fs-lg);
+    animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.3); opacity: 0.7; }
+}
+
+/* Tier Name */
+.tier-name {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Tier Price */
+.tier-price {
+    margin-bottom: var(--space-lg);
+}
+
+.tier-price .currency {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+    vertical-align: top;
+}
+
+.tier-price .amount {
+    font-size: var(--fs-4xl);
+    font-weight: var(--fw-black);
+    background: var(--tier-gradient, var(--gradient-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tier-price .period {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+/* Tier Description */
+.tier-description {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-lg);
+    min-height: 40px;
+}
+
+/* Tier Features */
+.tier-features {
+    text-align: left;
+    margin-bottom: var(--space-xl);
+}
+
+.tier-features li {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    border-bottom: 1px solid var(--border-light);
+}
+
+.tier-features li:last-child {
+    border-bottom: none;
+}
+
+.tier-features li i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(16, 185, 129, 0.1);
+    border-radius: 50%;
+    font-size: var(--fs-xs);
+    color: #10b981;
+}
+
+.tier-features li.disabled {
+    color: var(--text-muted);
+    text-decoration: line-through;
+}
+
+.tier-features li.disabled i {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+}
+
+/* Tier Button */
+.tier-btn {
+    width: 100%;
+    padding: var(--space-md) var(--space-lg);
+    background: var(--tier-gradient, var(--gradient-primary));
+    border: none;
+    border-radius: var(--radius-xl);
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.tier-card.gold .tier-btn,
+.tier-card.bronze .tier-btn {
+    color: #1a1a2e;
+}
+
+.tier-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px var(--tier-shadow, rgba(102, 126, 234, 0.4));
+}
+
+.tier-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s ease;
+}
+
+.tier-btn:hover::before {
+    left: 100%;
+}
+
+/* Tier Card Glow on Hover */
+.tier-card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at center, var(--tier-shadow, rgba(102, 126, 234, 0.1)) 0%, transparent 70%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+
+.tier-card:hover::after {
+    opacity: 1;
+}
+
+
+/* ============================================
+   8. BUY ME A COFFEE SECTION
+============================================ */
+.coffee {
+    background: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.coffee-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-3xl);
+    align-items: center;
+}
+
+.coffee-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2xl);
+}
+
+.coffee-cup-wrapper {
+    position: relative;
+    width: 280px;
+    height: 320px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.steam-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 15px;
+}
+
+.steam {
+    width: 8px;
+    height: 80px;
+    background: linear-gradient(to top, rgba(255,255,255,0.3), transparent);
+    border-radius: var(--radius-full);
+    animation: steam-rise 2s ease-in-out infinite;
+    opacity: 0;
+}
+
+.steam-1 { animation-delay: 0s; }
+.steam-2 { animation-delay: 0.5s; }
+.steam-3 { animation-delay: 1s; }
+
+@keyframes steam-rise {
+    0% {
+        transform: translateY(0) scaleX(1);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-40px) scaleX(1.5);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-80px) scaleX(2);
+        opacity: 0;
+    }
+}
+
+.coffee-cup {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+}
+
+.cup-body {
+    width: 160px;
+    height: 180px;
+    background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+    border-radius: 10px 10px 60px 60px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 
+        inset -10px 0 20px rgba(0,0,0,0.1),
+        0 20px 40px rgba(0,0,0,0.2);
+}
+
+.coffee-liquid {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 75%;
+    background: linear-gradient(to bottom, #8b4513 0%, #5d2e0c 100%);
+    border-radius: 0 0 55px 55px;
+}
+
+.coffee-wave {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 20px;
+    background: linear-gradient(90deg, 
+        transparent, 
+        rgba(255,255,255,0.2), 
+        transparent,
+        rgba(255,255,255,0.2),
+        transparent
+    );
+    animation: wave 3s linear infinite;
+}
+
+@keyframes wave {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(50%); }
+}
+
+.cup-shine {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 30px;
+    height: 80px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.4), transparent);
+    border-radius: var(--radius-full);
+    transform: rotate(-15deg);
+}
+
+.cup-handle {
+    width: 50px;
+    height: 80px;
+    border: 15px solid #e0e0e0;
+    border-left: none;
+    border-radius: 0 50px 50px 0;
+    position: absolute;
+    right: -45px;
+    top: 40px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
+}
+
+.cup-plate {
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 220px;
+    height: 20px;
+    background: linear-gradient(to bottom, #e8e8e8, #d0d0d0);
+    border-radius: 50%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.floating-beans {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.floating-beans .bean {
+    position: absolute;
+    font-size: var(--fs-xl);
+    animation: float-bean 4s ease-in-out infinite;
+}
+
+.floating-beans .bean:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.floating-beans .bean:nth-child(2) { top: 30%; right: 5%; animation-delay: 1s; }
+.floating-beans .bean:nth-child(3) { bottom: 30%; left: 5%; animation-delay: 2s; }
+
+.coffee-facts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.fact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-glass);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    backdrop-filter: var(--glass-blur);
+    transition: all var(--transition-normal);
+}
+
+.fact-item:hover {
+    transform: translateX(10px);
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.fact-item i {
+    font-size: var(--fs-xl);
+    color: var(--coffee-color);
+}
+
+.fact-item span {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+}
+
+.selector-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    box-shadow: var(--shadow-lg);
+}
+
+.selector-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.selector-title i {
+    color: var(--coffee-color);
+}
+
+.coffee-counter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.counter-btn {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: 50%;
+    font-size: var(--fs-xl);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.counter-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+    transform: scale(1.1);
+}
+
+.counter-btn:active {
+    transform: scale(0.95);
+}
+
+.counter-display {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-md) var(--space-xl);
+    background: var(--gradient-hero);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    min-width: 120px;
+    justify-content: center;
+}
+
+.counter-value {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-black);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.counter-emoji {
+    font-size: var(--fs-2xl);
+}
+
+.quick-select {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+    margin-bottom: var(--space-xl);
+}
+
+.quick-btn {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+    cursor: pointer;
+}
+
+.quick-btn:hover {
+    border-color: var(--primary-color);
+    background: var(--gradient-hero);
+    transform: translateY(-3px);
+}
+
+.quick-btn.active {
+    border-color: var(--coffee-color);
+    background: rgba(201, 166, 107, 0.1);
+}
+
+.quick-btn.popular {
+    border-color: var(--gold-color);
+}
+
+.popular-tag {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 2px 8px;
+    background: var(--gradient-gold);
+    border-radius: var(--radius-full);
+    font-size: 10px;
+    font-weight: var(--fw-bold);
+    color: #1a1a2e;
+}
+
+.quick-emoji {
+    font-size: var(--fs-lg);
+}
+
+.quick-text {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+}
+
+.price-display {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--space-sm) 0;
+}
+
+.price-label {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+}
+
+.price-value {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    color: var(--text-primary);
+}
+
+.price-divider {
+    height: 1px;
+    background: var(--border-color);
+    margin: var(--space-sm) 0;
+}
+
+.price-row.total .price-label {
+    font-weight: var(--fw-semibold);
+    color: var(--text-primary);
+}
+
+.price-row.total .price-value {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.supporter-input {
+    margin-bottom: var(--space-md);
+}
+
+.supporter-input label {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+}
+
+.supporter-input label i {
+    color: var(--primary-color);
+}
+
+.supporter-input input,
+.supporter-input textarea {
+    width: 100%;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: var(--fs-base);
+    color: var(--text-primary);
+    transition: all var(--transition-normal);
+    resize: none;
+}
+
+.supporter-input input:focus,
+.supporter-input textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(102, 126, 234, 0.1);
+}
+
+.supporter-input input::placeholder,
+.supporter-input textarea::placeholder {
+    color: var(--text-muted);
+}
+
+.btn-large {
+    width: 100%;
+    padding: var(--space-lg);
+    font-size: var(--fs-md);
+    gap: var(--space-md);
+    margin-bottom: var(--space-md);
+}
+
+.btn-price {
+    padding: var(--space-xs) var(--space-md);
+    background: rgba(255,255,255,0.2);
+    border-radius: var(--radius-full);
+    font-size: var(--fs-sm);
+}
+
+.secure-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+.secure-badge i {
+    color: #10b981;
+}
+
+/* ============================================
+   9. UPI PAYMENT SECTION
+============================================ */
+.payment {
+    background: var(--bg-secondary);
+}
+
+.payment-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-2xl);
+    margin-bottom: var(--space-3xl);
+}
+
+.qr-card {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    text-align: center;
+    overflow: hidden;
+}
+
+.qr-glow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(102, 126, 234, 0.2) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+.qr-content {
+    position: relative;
+    z-index: 2;
+}
+
+.qr-header {
+    margin-bottom: var(--space-xl);
+}
+
+.upi-logo {
+    width: 80px;
+    margin: 0 auto var(--space-md);
+}
+
+.upi-logo img {
+    width: 100%;
+}
+
+.qr-header h3 {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+}
+
+.qr-image-wrapper {
+    position: relative;
+    display: inline-block;
+    margin-bottom: var(--space-lg);
+}
+
+.qr-frame {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.corner {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 4px solid var(--primary-color);
+}
+
+.corner-tl { top: -5px; left: -5px; border-right: none; border-bottom: none; border-radius: 10px 0 0 0; }
+.corner-tr { top: -5px; right: -5px; border-left: none; border-bottom: none; border-radius: 0 10px 0 0; }
+.corner-bl { bottom: -5px; left: -5px; border-right: none; border-top: none; border-radius: 0 0 0 10px; }
+.corner-br { bottom: -5px; right: -5px; border-left: none; border-top: none; border-radius: 0 0 10px 0; }
+
+.qr-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--text-muted);
+}
+
+.qr-placeholder i {
+    font-size: 80px;
+    color: var(--primary-color);
+}
+
+.scan-line {
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    animation: scan 2s ease-in-out infinite;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+}
+
+@keyframes scan {
+    0%, 100% { top: 10%; opacity: 1; }
+    50% { top: 85%; opacity: 0.5; }
+}
+
+.qr-instruction {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-lg);
+}
+
+.upi-apps {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+}
+
+.app-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: var(--fs-xl);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.app-icon:hover {
+    background: var(--primary-color);
+    color: var(--text-light);
+    transform: translateY(-5px);
+}
+
+.app-icon::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 4px 10px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    font-size: var(--fs-xs);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-fast);
+}
+
+.app-icon:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+.upi-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+}
+
+.upi-card-content {
+    text-align: center;
+}
+
+.upi-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    margin: 0 auto var(--space-lg);
+    font-size: var(--fs-2xl);
+    color: var(--text-light);
+}
+
+.upi-card h3 {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.upi-card-content > p {
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-xl);
+}
+
+.upi-id-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border: 2px dashed var(--border-color);
+    border-radius: var(--radius-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.upi-id {
+    font-family: var(--font-mono);
+    font-size: var(--fs-sm);
+    color: var(--primary-color);
+    font-weight: var(--fw-medium);
+    word-break: break-all;
+}
+
+.copy-btn {
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-sm) var(--space-md);
+    background: var(--gradient-primary);
+    border: none;
+    border-radius: var(--radius-lg);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-light);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    white-space: nowrap;
+}
+
+.copy-btn:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-glow);
+}
+
+.payment-steps {
+    text-align: left;
+    margin-bottom: var(--space-xl);
+}
+
+.payment-steps h4 {
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-md);
+    color: var(--text-primary);
+}
+
+.step {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-sm) 0;
+}
+
+.step-number {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-bold);
+    color: var(--text-light);
+    flex-shrink: 0;
+}
+
+.step span {
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+}
+
+.quick-amounts h4 {
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-md);
+    text-align: left;
+}
+
+.amount-btns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-sm);
+}
+
+.amount-btn {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--bg-secondary);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.amount-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: var(--gradient-hero);
+}
+
+.amount-btn.custom {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: var(--text-light);
+}
+
+.other-payments {
+    text-align: center;
+}
+
+.other-title {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.payment-methods {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.payment-method {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-xl);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.payment-method:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.method-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--radius-xl);
+    font-size: var(--fs-2xl);
+    color: var(--text-light);
+}
+
+.method-icon.paypal { background: linear-gradient(135deg, #003087, #009cde); }
+.method-icon.card { background: linear-gradient(135deg, #1a1f71, #f7b600); }
+.method-icon.bank { background: linear-gradient(135deg, #00796b, #4db6ac); }
+.method-icon.crypto { background: linear-gradient(135deg, #f7931a, #4a4a4a); }
+
+.method-info h4 {
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-xs);
+}
+
+.method-info p {
+    font-size: var(--fs-xs);
+    color: var(--text-muted);
+}
+
+.method-btn {
+    padding: var(--space-sm) var(--space-lg);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-full);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-medium);
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+}
+
+.method-btn:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* ============================================
+   10. SUPPORTERS WALL SECTION
+============================================ */
+.supporters {
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+
+.supporters-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-lg);
+    margin-bottom: var(--space-xl);
+    color: var(--text-primary);
+}
+
+.supporters-subtitle i {
+    color: var(--gold-color);
+}
+
+.top-supporters {
+    margin-bottom: var(--space-3xl);
+}
+
+.top-supporters-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+}
+
+.supporter-card {
+    position: relative;
+    background: var(--bg-card);
+    border: 2px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-xl);
+    text-align: center;
+    transition: all var(--transition-normal);
+    overflow: hidden;
+}
+
+.supporter-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--card-gradient, var(--gradient-primary));
+}
+
+.supporter-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+}
+
+.supporter-card.diamond {
+    --card-gradient: var(--gradient-diamond);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.supporter-card.gold {
+    --card-gradient: var(--gradient-gold);
+    border-color: rgba(251, 191, 36, 0.3);
+}
+
+.supporter-card.silver {
+    --card-gradient: var(--gradient-silver);
+    border-color: rgba(189, 195, 199, 0.3);
+}
+
+.supporter-badge {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    padding: var(--space-xs) var(--space-sm);
+    background: var(--card-gradient, var(--gradient-primary));
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-bold);
+    color: var(--text-light);
+}
+
+.supporter-card.gold .supporter-badge,
+.supporter-card.bronze .supporter-badge {
+    color: #1a1a2e;
+}
+
+.supporter-avatar {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto var(--space-md);
+}
+
+.supporter-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-ring {
+    position: absolute;
+    inset: -5px;
+    border: 3px solid transparent;
+    border-radius: 50%;
+    background: var(--card-gradient, var(--gradient-primary)) border-box;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: rotate-ring 5s linear infinite;
+}
+
+@keyframes rotate-ring {
+    to { transform: rotate(360deg); }
+}
+
+.supporter-name {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--space-xs);
+}
+
+.supporter-amount {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    color: var(--primary-color);
+    margin-bottom: var(--space-md);
+}
+
+.supporter-message {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+    font-style: italic;
+    margin-bottom: var(--space-md);
+    min-height: 40px;
+}
+
+.supporter-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-xs);
+    font-size: var(--fs-xs);
+    color: var(--text-muted);
+}
+
+.all-supporters {
+    margin-bottom: var(--space-3xl);
+}
+
+.supporters-scroll {
+    overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+
+.supporters-track {
+    display: flex;
+    gap: var(--space-md);
+    animation: scroll-supporters 30s linear infinite;
+    width: max-content;
+}
+
+.supporters-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-supporters {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+.supporter-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    white-space: nowrap;
+    transition: all var(--transition-normal);
+}
+
+.supporter-item:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-md);
+}
+
+.supporter-item.diamond { border-color: rgba(102, 126, 234, 0.3); }
+.supporter-item.gold { border-color: rgba(251, 191, 36, 0.3); }
+.supporter-item.silver { border-color: rgba(189, 195, 199, 0.3); }
+.supporter-item.bronze { border-color: rgba(205, 127, 50, 0.3); }
+
+.supporter-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+}
+
+.item-coffees {
+    font-size: var(--fs-xs);
+    color: var(--coffee-color);
+}
+
+.be-next {
+    background: var(--gradient-hero);
+    border: 1px dashed var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    text-align: center;
+}
+
+.be-next-icon {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    margin: 0 auto var(--space-lg);
+    font-size: var(--fs-2xl);
+    color: var(--text-light);
+    animation: pulse-icon 2s ease-in-out infinite;
+}
+
+@keyframes pulse-icon {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(102, 126, 234, 0.4); }
+    50% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(102, 126, 234, 0); }
+}
+
+.be-next h3 {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.be-next p {
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-lg);
+}
+
+/* ============================================
+   11. FUNDING GOALS SECTION
+============================================ */
+.goals {
+    background: var(--bg-secondary);
+}
+
+.goals-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-3xl);
+}
+
+.current-goal {
+    background: var(--bg-card);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    position: relative;
+    overflow: hidden;
+}
+
+.current-goal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.goal-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.goal-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl);
+    font-size: var(--fs-2xl);
+    color: var(--text-light);
+    flex-shrink: 0;
+}
+
+.goal-info h3 {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-xs);
+}
+
+.goal-info p {
+    color: var(--text-tertiary);
+}
+
+.goal-progress {
+    margin-bottom: var(--space-xl);
+}
+
+.progress-bar {
+    position: relative;
+    height: 24px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    overflow: visible;
+    margin-bottom: var(--space-lg);
+}
+
+.progress-fill {
+    position: relative;
+    height: 100%;
+    width: var(--progress, 0%);
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.progress-glow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background: var(--text-light);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(102, 126, 234, 0.8);
+    animation: glow-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 10px rgba(102, 126, 234, 0.5); }
+    50% { box-shadow: 0 0 30px rgba(102, 126, 234, 1); }
+}
+
+.progress-markers {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.marker {
+    position: absolute;
+    top: 100%;
+    margin-top: 8px;
+    transform: translateX(-50%);
+    font-size: var(--fs-xs);
+    color: var(--text-muted);
+}
+
+.progress-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progress-stats .stat {
+    text-align: center;
+}
+
+.progress-stats .stat-value {
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    color: var(--text-primary);
+}
+
+.progress-stats .stat.percentage .stat-value {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: var(--fs-2xl);
+}
+
+.progress-stats .stat-label {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+.goal-cta {
+    text-align: center;
+}
+
+.goals-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.goal-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg);
+    text-align: center;
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.goal-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.goal-status {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-xs);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-full);
+    font-size: var(--fs-xs);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-md);
+}
+
+.goal-card.completed .goal-status {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.goal-card.active .goal-status {
+    background: rgba(251, 191, 36, 0.1);
+    color: var(--gold-color);
+}
+
+.goal-card.upcoming .goal-status {
+    background: rgba(107, 114, 128, 0.1);
+    color: var(--text-muted);
+}
+
+.goal-card-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    margin: 0 auto var(--space-md);
+    font-size: var(--fs-xl);
+    color: var(--primary-color);
+}
+
+.goal-card.completed .goal-card-icon {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.goal-card h4 {
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-xs);
+}
+
+.goal-card p {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+    margin-bottom: var(--space-md);
+}
+
+.goal-amount {
+    margin-bottom: var(--space-md);
+}
+
+.goal-amount .raised {
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    color: var(--primary-color);
+}
+
+.goal-amount .target {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+.goal-bar {
+    height: 6px;
+    background: var(--bg-secondary);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-full);
+    transition: width 1s ease;
+}
+
+.goal-card.completed .bar-fill {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.support-impact {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    text-align: center;
+}
+
+.impact-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.impact-title i {
+    color: var(--gold-color);
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-lg);
+}
+
+.impact-item {
+    padding: var(--space-lg);
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    transition: all var(--transition-normal);
+}
+
+.impact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.impact-icon {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-xl);
+    margin: 0 auto var(--space-md);
+    font-size: var(--fs-xl);
+    color: var(--text-light);
+}
+
+.impact-item h4 {
+    font-size: var(--fs-base);
+    margin-bottom: var(--space-xs);
+}
+
+.impact-item p {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+/* ============================================
+   12. FAQ SECTION
+============================================ */
+.faq {
+    background: var(--bg-primary);
+}
+
+.faq-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: var(--space-3xl);
+    align-items: start;
+}
+
+/* FAQ List */
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+}
+
+.faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    overflow: hidden;
+    transition: all var(--transition-normal);
+}
+
+.faq-item:hover {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.faq-item.active {
+    border-color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    width: 100%;
+    padding: var(--space-lg);
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.faq-item.active .faq-question {
+    background: var(--gradient-hero);
+}
+
+.question-icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: var(--radius-lg);
+    color: var(--text-light);
+    font-size: var(--fs-base);
+    flex-shrink: 0;
+}
+
+.question-text {
+    flex: 1;
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    color: var(--text-primary);
+}
+
+.question-toggle {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border-radius: 50%;
+    color: var(--text-secondary);
+    font-size: var(--fs-sm);
+    transition: all var(--transition-normal);
+}
+
+.question-toggle .fa-minus {
+    display: none;
+}
+
+.faq-item.active .question-toggle {
+    background: var(--primary-color);
+    color: var(--text-light);
+    transform: rotate(180deg);
+}
+
+.faq-item.active .question-toggle .fa-plus {
+    display: none;
+}
+
+.faq-item.active .question-toggle .fa-minus {
+    display: block;
+}
+
+/* FAQ Answer */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 500px;
+    padding: 0 var(--space-lg) var(--space-lg);
+}
+
+.faq-answer p {
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+    line-height: var(--lh-relaxed);
+    margin-bottom: var(--space-md);
+}
+
+.faq-answer ul {
+    margin-bottom: var(--space-md);
+}
+
+.faq-answer li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-sm);
+    padding: var(--space-xs) 0;
+    font-size: var(--fs-sm);
+    color: var(--text-secondary);
+}
+
+.faq-answer li i {
+    color: #10b981;
+    margin-top: 3px;
+}
+
+.faq-answer li i.fa-medal { color: #cd7f32; }
+.faq-answer li i.fa-gem { color: var(--primary-color); }
+.faq-answer li i.fa-crown { color: var(--gold-color); }
+
+/* FAQ Illustration */
+.faq-illustration {
+    position: sticky;
+    top: 120px;
+    text-align: center;
+}
+
+.illustration-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto var(--space-xl);
+}
+
+.illustration-circle {
+    position: absolute;
+    inset: 0;
+    background: var(--gradient-hero);
+    border-radius: 50%;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+.illustration-icon {
+    position: absolute;
+    inset: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border-radius: 50%;
+    font-size: 80px;
+    color: var(--primary-color);
+    box-shadow: var(--shadow-lg);
+}
+
+.floating-question {
+    position: absolute;
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-black);
+    color: var(--primary-color);
+    animation: float-q 3s ease-in-out infinite;
+}
+
+.floating-question.q1 { top: 10%; left: 10%; animation-delay: 0s; }
+.floating-question.q2 { top: 20%; right: 5%; animation-delay: 1s; }
+.floating-question.q3 { bottom: 15%; left: 5%; animation-delay: 2s; }
+
+@keyframes float-q {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(10deg); }
+}
+
+.still-questions h3 {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-sm);
+}
+
+.still-questions p {
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-lg);
+}
+
+/* ============================================
+   13. CONTACT CTA SECTION
+============================================ */
+.contact-cta {
+    background: var(--bg-secondary);
+}
+
+.cta-wrapper {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-3xl);
+    padding: var(--space-4xl);
+    text-align: center;
+    overflow: hidden;
+}
+
+.cta-bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.cta-blob {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.5;
+}
+
+.cta-blob.blob-1 {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.4), rgba(118, 75, 162, 0.3));
+    top: -200px;
+    left: -100px;
+}
+
+.cta-blob.blob-2 {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(135deg, rgba(251, 191, 36, 0.3), rgba(201, 166, 107, 0.2));
+    bottom: -150px;
+    right: -100px;
+}
+
+.cta-particles span {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: particle-float 10s ease-in-out infinite;
+}
+
+.cta-particles span:nth-child(1) { top: 20%; left: 10%; animation-delay: 0s; }
+.cta-particles span:nth-child(2) { top: 30%; right: 15%; animation-delay: 2s; }
+.cta-particles span:nth-child(3) { bottom: 20%; left: 20%; animation-delay: 4s; }
+.cta-particles span:nth-child(4) { top: 50%; left: 5%; animation-delay: 1s; }
+.cta-particles span:nth-child(5) { bottom: 30%; right: 10%; animation-delay: 3s; }
+.cta-particles span:nth-child(6) { top: 10%; right: 30%; animation-delay: 5s; }
+
+@keyframes particle-float {
+    0%, 100% { transform: translateY(0) scale(1); opacity: 0.3; }
+    50% { transform: translateY(-30px) scale(1.5); opacity: 0.6; }
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.cta-emoji {
+    font-size: 64px;
+    margin-bottom: var(--space-lg);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.cta-title {
+    font-size: var(--fs-3xl);
+    font-weight: var(--fw-black);
+    margin-bottom: var(--space-md);
+}
+
+.cta-text {
+    font-size: var(--fs-lg);
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto var(--space-xl);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-xl);
+}
+
+.cta-trust {
+    display: flex;
+    justify-content: center;
+    gap: var(--space-2xl);
+    flex-wrap: wrap;
+}
+
+.trust-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+}
+
+.trust-item i {
+    color: #10b981;
+}
+
+/* ============================================
+   14. FOOTER
+============================================ */
+.footer {
+    background: var(--bg-primary);
+    position: relative;
+    padding-top: var(--space-3xl);
+}
+
+.footer-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+    color: var(--bg-secondary);
+    transform: translateY(-99%);
+}
+
+.footer-wave svg {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    gap: var(--space-2xl);
+    padding-bottom: var(--space-2xl);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Footer Brand */
+.footer-brand {
+    max-width: 300px;
+}
+
+.footer-logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-xl);
+    font-weight: var(--fw-bold);
+    margin-bottom: var(--space-md);
+}
+
+.footer-logo i {
+    color: var(--coffee-color);
+    font-size: var(--fs-2xl);
+}
+
+.footer-logo span {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-tagline {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+    margin-bottom: var(--space-lg);
+}
+
+.footer-socials {
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.footer-socials a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    color: var(--text-secondary);
+    transition: all var(--transition-normal);
+}
+
+.footer-socials a:hover {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--text-light);
+    transform: translateY(-3px);
+}
+
+/* Footer Links */
+.footer-links h4,
+.footer-contact h4 {
+    font-size: var(--fs-base);
+    font-weight: var(--fw-semibold);
+    margin-bottom: var(--space-lg);
+}
+
+.footer-links ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.footer-links a {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+    transition: all var(--transition-normal);
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+    transform: translateX(5px);
+}
+
+/* Footer Contact */
+.footer-contact .contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    padding: var(--space-sm) 0;
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+}
+
+.footer-contact .contact-item i {
+    width: 20px;
+    color: var(--primary-color);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-lg) 0;
+}
+
+.copyright {
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+.copyright .heart-beat {
+    color: #ef4444;
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+}
+
+.footer-bottom-links {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    font-size: var(--fs-sm);
+}
+
+.footer-bottom-links a {
+    color: var(--text-muted);
+    transition: color var(--transition-normal);
+}
+
+.footer-bottom-links a:hover {
+    color: var(--primary-color);
+}
+
+.footer-bottom-links span {
+    color: var(--text-muted);
+}
+
+/* ============================================
+   15. BACK TO TOP BUTTON
+============================================ */
+.back-to-top {
+    position: fixed;
+    bottom: var(--space-xl);
+    right: var(--space-xl);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    color: var(--text-primary);
+    font-size: var(--fs-lg);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all var(--transition-normal);
+    z-index: var(--z-fixed);
+    box-shadow: var(--shadow-lg);
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--gradient-primary);
+    border-color: transparent;
+    color: var(--text-light);
+    transform: translateY(-5px);
+}
+
+.back-to-top .progress-ring {
+    position: absolute;
+    inset: -3px;
+    transform: rotate(-90deg);
+}
+
+.progress-ring-circle {
+    fill: none;
+    stroke: var(--primary-color);
+    stroke-width: 3;
+    stroke-dasharray: 283;
+    stroke-dashoffset: 283;
+    transition: stroke-dashoffset 0.1s ease;
+}
+
+/* ============================================
+   16. TOAST NOTIFICATIONS
+============================================ */
+.toast-container {
+    position: fixed;
+    bottom: var(--space-xl);
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    z-index: var(--z-tooltip);
+    pointer-events: none;
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md) var(--space-lg);
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    min-width: 300px;
+    pointer-events: auto;
+    animation: toast-in 0.3s ease forwards;
+}
+
+.toast.removing {
+    animation: toast-out 0.3s ease forwards;
+}
+
+@keyframes toast-in {
+    from { opacity: 0; transform: translateY(20px) scale(0.9); }
+    to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes toast-out {
+    from { opacity: 1; transform: translateY(0) scale(1); }
+    to { opacity: 0; transform: translateY(20px) scale(0.9); }
+}
+
+.toast-icon {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: var(--fs-base);
+}
+
+.toast.success .toast-icon {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.toast.error .toast-icon {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.toast.info .toast-icon {
+    background: rgba(59, 130, 246, 0.15);
+    color: #3b82f6;
+}
+
+.toast.warning .toast-icon {
+    background: rgba(245, 158, 11, 0.15);
+    color: #f59e0b;
+}
+
+.toast-content {
+    flex: 1;
+}
+
+.toast-title {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    margin-bottom: 2px;
+}
+
+.toast-message {
+    font-size: var(--fs-xs);
+    color: var(--text-tertiary);
+}
+
+.toast-close {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border: none;
+    border-radius: 50%;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.toast-close:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+/* ============================================
+   17. MODAL
+============================================ */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-modal);
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-normal);
+}
+
+.modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-2xl);
+    padding: var(--space-2xl);
+    text-align: center;
+    transform: scale(0.9) translateY(20px);
+    transition: transform var(--transition-normal);
+    box-shadow: var(--shadow-xl);
+}
+
+.modal.active .modal-content {
+    transform: scale(1) translateY(0);
+}
+
+.modal-close {
+    position: absolute;
+    top: var(--space-md);
+    right: var(--space-md);
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-secondary);
+    border: none;
+    border-radius: 50%;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-normal);
+}
+
+.modal-close:hover {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+}
+
+.modal-icon {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    margin: 0 auto var(--space-lg);
+    font-size: var(--fs-2xl);
+    color: var(--text-light);
+}
+
+.modal-content h3 {
+    font-size: var(--fs-xl);
+    margin-bottom: var(--space-lg);
+}
+
+.bank-details {
+    background: var(--bg-secondary);
+    border-radius: var(--radius-xl);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+    text-align: left;
+}
+
+.bank-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.bank-row:last-child {
+    border-bottom: none;
+}
+
+.bank-label {
+    font-size: var(--fs-sm);
+    color: var(--text-tertiary);
+}
+
+.bank-value {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-semibold);
+    font-family: var(--font-mono);
+}
+
+.copy-small {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary-color);
+    border: none;
+    border-radius: var(--radius-md);
+    color: var(--text-light);
+    font-size: var(--fs-xs);
+    cursor: pointer;
+    margin-left: var(--space-sm);
+    transition: all var(--transition-normal);
+}
+
+.copy-small:hover {
+    transform: scale(1.1);
+}
+
+.modal-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-sm);
+    font-size: var(--fs-sm);
+    color: var(--text-muted);
+}
+
+.modal-note i {
+    color: var(--primary-color);
+}
+
+/* ============================================
+   18. RESPONSIVE STYLES
+============================================ */
+
+/* Large Tablets */
+@media screen and (max-width: 1024px) {
+    .tiers-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .tier-card.popular {
+        transform: none;
+    }
+    
+    .tier-card.popular:hover {
+        transform: translateY(-10px);
+    }
+    
+    .coffee-container {
+        grid-template-columns: 1fr;
+        gap: var(--space-2xl);
+    }
+    
+    .coffee-visual {
+        order: 2;
+    }
+    
+    .coffee-selector {
+        order: 1;
+    }
+    
+    .payment-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .payment-methods {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .top-supporters-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .impact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .faq-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .faq-illustration {
+        display: none;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-xl);
+    }
+    
+    .footer-brand {
+        grid-column: span 2;
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: var(--space-lg);
+    }
+    
+    .footer-socials {
+        justify-content: center;
+    }
+}
+
+/* Tablets */
+@media screen and (max-width: 768px) {
+    .section {
+        padding: 4rem 0;
+    }
+    
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 350px;
+        height: 100vh;
+        background: var(--bg-card);
+        flex-direction: column;
+        padding: 100px var(--space-xl) var(--space-xl);
+        box-shadow: var(--shadow-xl);
+        transition: right var(--transition-normal);
+        z-index: var(--z-fixed);
+    }
+    
+    .nav-links.show {
+        right: 0;
+    }
+    
+    .nav-link {
+        width: 100%;
+        padding: var(--space-md);
+        background: var(--bg-secondary);
+        border-radius: var(--radius-lg);
+    }
+    
+    .nav-toggle {
+        display: flex;
+    }
+    
+    .nav-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+    
+    .nav-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .nav-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+    
+    .back-btn span {
+        display: none;
+    }
+    
+    .hero-title {
+        font-size: clamp(var(--fs-2xl), 8vw, var(--fs-4xl));
+    }
+    
+    .hero-stats {
+        gap: var(--space-md);
+    }
+    
+    .stat-item {
+        min-width: 100px;
+        padding: var(--space-md);
+    }
+    
+    .tiers-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .coffee-cup-wrapper {
+        transform: scale(0.9);
+    }
+    
+    .quick-select {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .payment-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .goal-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .goals-grid {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        margin: 0 auto;
+    }
+    
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-wrapper {
+        padding: var(--space-2xl);
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+    }
+    
+    .cta-trust {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .footer-brand {
+        grid-column: span 1;
+    }
+    
+    .footer-links ul {
+        align-items: center;
+    }
+    
+    .footer-contact .contact-item {
+        justify-content: center;
+    }
+    
+    .footer-bottom {
+        flex-direction: column;
+        gap: var(--space-md);
+        text-align: center;
+    }
+    
+    .back-to-top {
+        bottom: var(--space-lg);
+        right: var(--space-lg);
+        width: 44px;
+        height: 44px;
+    }
+    
+    .toast-container {
+        left: var(--space-md);
+        right: var(--space-md);
+        transform: none;
+    }
+    
+    .toast {
+        min-width: auto;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding-top: 100px;
+    }
+    
+    .hero-badge {
+        padding: var(--space-xs) var(--space-md);
+        font-size: var(--fs-xs);
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .stat-item {
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .scroll-down {
+        display: none;
+    }
+    
+    .coffee-cup-wrapper {
+        transform: scale(0.75);
+    }
+    
+    .selector-card {
+        padding: var(--space-lg);
+    }
+    
+    .counter-btn {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .counter-value {
+        font-size: var(--fs-2xl);
+    }
+    
+    .quick-select {
+        grid-template-columns: 1fr;
+    }
+    
+    .qr-frame {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .upi-id-box {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    .upi-id {
+        text-align: center;
+    }
+    
+    .progress-stats {
+        flex-direction: column;
+        gap: var(--space-md);
+    }
+    
+    .faq-question {
+        padding: var(--space-md);
+    }
+    
+    .question-icon {
+        width: 36px;
+        height: 36px;
+        font-size: var(--fs-sm);
+    }
+    
+    .question-text {
+        font-size: var(--fs-sm);
+    }
+    
+    .modal-content {
+        padding: var(--space-lg);
+        margin: var(--space-md);
+    }
+}
+
+/* ============================================
+   19. ANIMATIONS
+============================================ */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}
+
+/* Print styles */
+@media print {
+    .header,
+    .back-to-top,
+    .toast-container,
+    .hero-bg,
+    .coffee-beans,
+    .floating-hearts,
+    .scroll-down {
+        display: none !important;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <!-- ============================================
+         NAVIGATION
+    ============================================= -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav-logo">
+                <i class="fas fa-mug-hot"></i>
+                <span>Support Me</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="#tiers" class="nav-link">Support Tiers</a>
+                <a href="#coffee" class="nav-link">Buy Coffee</a>
+                <a href="#payment" class="nav-link">Payment</a>
+                <a href="#supporters" class="nav-link">Supporters</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+                <a href="index.html" class="back-btn">
+                    <i class="fas fa-arrow-left"></i>
+                    <span>Portfolio</span>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ============================================
+         HERO SECTION
+    ============================================= -->
+    <section class="hero" id="hero">
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="hero-blob blob-1"></div>
+            <div class="hero-blob blob-2"></div>
+            <div class="hero-blob blob-3"></div>
+            <div class="grid-overlay"></div>
+            
+            <!-- Floating Coffee Beans -->
+            <div class="coffee-beans">
+                <span class="coffee-bean">☕</span>
+                <span class="coffee-bean">☕</span>
+                <span class="coffee-bean">☕</span>
+                <span class="coffee-bean">☕</span>
+                <span class="coffee-bean">☕</span>
+                <span class="coffee-bean">☕</span>
+                <span class="coffee-bean">☕</span>
+            </div>
+            
+            <!-- Floating Hearts -->
+            <div class="floating-hearts">
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+                <span class="heart"><i class="fas fa-heart"></i></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up">
+                <div class="hero-badge">
+                    <i class="fas fa-star"></i>
+                    <span>Support Independent Developer</span>
+                </div>
+
+                <h1 class="hero-title">
+                    Fuel My Code With<br>
+                    <span class="highlight gradient-text">Your Support</span>
+                    <span class="hero-coffee-icon">☕</span>
+                </h1>
+
+                <p class="hero-subtitle">
+                    Your contribution helps me create more amazing projects, open-source tools, 
+                    and educational content. Every coffee counts! 💜
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#coffee" class="btn btn-coffee">
+                        <i class="fas fa-mug-hot"></i>
+                        Buy Me a Coffee
+                    </a>
+                    <a href="#tiers" class="btn btn-secondary">
+                        <i class="fas fa-crown"></i>
+                        Become a Sponsor
+                    </a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                        <i class="fas fa-mug-hot stat-icon"></i>
+                        <span class="stat-value" id="coffeeCount">127</span>
+                        <span class="stat-label">Coffees Received</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                        <i class="fas fa-heart stat-icon"></i>
+                        <span class="stat-value" id="supporterCount">43</span>
+                        <span class="stat-label">Supporters</span>
+                    </div>
+                    <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                        <i class="fas fa-trophy stat-icon"></i>
+                        <span class="stat-value">8+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-down">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SUPPORT TIERS SECTION
+    ============================================= -->
+    <section class="tiers section" id="tiers">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-crown"></i>
+                    Sponsorship
+                </span>
+                <h2 class="section-title">
+                    Choose Your <span class="gradient-text">Support Tier</span>
+                </h2>
+                <p class="section-subtitle">
+                    Become a sponsor and get exclusive perks while supporting my work
+                </p>
+            </div>
+
+            <div class="tiers-grid">
+                <!-- Bronze Tier -->
+                <div class="tier-card bronze" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tier-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h3 class="tier-name">Bronze</h3>
+                    <div class="tier-price">
+                        <span class="currency">₹</span>
+                        <span class="amount">99</span>
+                        <span class="period">/one-time</span>
+                    </div>
+                    <p class="tier-description">Perfect for showing appreciation</p>
+                    <ul class="tier-features">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Thank you message</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Name on supporters list</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Support badge</span>
+                        </li>
+                        <li class="disabled">
+                            <i class="fas fa-times"></i>
+                            <span>Priority support</span>
+                        </li>
+                        <li class="disabled">
+                            <i class="fas fa-times"></i>
+                            <span>Custom features</span>
+                        </li>
+                    </ul>
+                    <button class="tier-btn">
+                        <i class="fas fa-heart"></i>
+                        Support Now
+                    </button>
+                </div>
+
+                <!-- Silver Tier -->
+                <div class="tier-card silver" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tier-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="tier-name">Silver</h3>
+                    <div class="tier-price">
+                        <span class="currency">₹</span>
+                        <span class="amount">249</span>
+                        <span class="period">/one-time</span>
+                    </div>
+                    <p class="tier-description">For awesome supporters</p>
+                    <ul class="tier-features">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>All Bronze perks</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Highlighted on wall</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Early project access</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Discord role</span>
+                        </li>
+                        <li class="disabled">
+                            <i class="fas fa-times"></i>
+                            <span>1-on-1 chat</span>
+                        </li>
+                    </ul>
+                    <button class="tier-btn">
+                        <i class="fas fa-rocket"></i>
+                        Upgrade Now
+                    </button>
+                </div>
+
+                <!-- Gold Tier (Popular) -->
+                <div class="tier-card gold popular" data-aos="fade-up" data-aos-delay="300">
+                    <div class="popular-badge">🔥 Most Popular</div>
+                    <div class="tier-icon">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                    <h3 class="tier-name">Gold</h3>
+                    <div class="tier-price">
+                        <span class="currency">₹</span>
+                        <span class="amount">499</span>
+                        <span class="period">/one-time</span>
+                    </div>
+                    <p class="tier-description">Premium supporter status</p>
+                    <ul class="tier-features">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>All Silver perks</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Priority support</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Name in project credits</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Request features</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Monthly shoutout</span>
+                        </li>
+                    </ul>
+                    <button class="tier-btn">
+                        <i class="fas fa-star"></i>
+                        Go Gold
+                    </button>
+                </div>
+
+                <!-- Diamond Tier -->
+                <div class="tier-card diamond" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tier-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="tier-name">Diamond</h3>
+                    <div class="tier-price">
+                        <span class="currency">₹</span>
+                        <span class="amount">999</span>
+                        <span class="period">/one-time</span>
+                    </div>
+                    <p class="tier-description">Ultimate supporter</p>
+                    <ul class="tier-features">
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>All Gold perks</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>1-on-1 chat session</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Custom project help</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Logo on website</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-check"></i>
+                            <span>Lifetime access</span>
+                        </li>
+                    </ul>
+                    <button class="tier-btn">
+                        <i class="fas fa-gem"></i>
+                        Go Diamond
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- ============================================
+         BUY ME A COFFEE SECTION
+    ============================================= -->
+    <section class="coffee section" id="coffee">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-mug-hot"></i>
+                    Quick Support
+                </span>
+                <h2 class="section-title">
+                    Buy Me a <span class="gradient-text">Coffee</span> ☕
+                </h2>
+                <p class="section-subtitle">
+                    A small coffee can fuel hours of coding! Choose how many you'd like to send
+                </p>
+            </div>
+
+            <div class="coffee-container">
+                <!-- Coffee Visual -->
+                <div class="coffee-visual" data-aos="fade-right">
+                    <div class="coffee-cup-wrapper">
+                        <!-- Animated Steam -->
+                        <div class="steam-container">
+                            <div class="steam steam-1"></div>
+                            <div class="steam steam-2"></div>
+                            <div class="steam steam-3"></div>
+                        </div>
+                        
+                        <!-- Coffee Cup -->
+                        <div class="coffee-cup">
+                            <div class="cup-body">
+                                <div class="coffee-liquid">
+                                    <div class="coffee-wave"></div>
+                                </div>
+                                <div class="cup-shine"></div>
+                            </div>
+                            <div class="cup-handle"></div>
+                            <div class="cup-plate"></div>
+                        </div>
+                        
+                        <!-- Floating Beans -->
+                        <div class="floating-beans">
+                            <span class="bean">🫘</span>
+                            <span class="bean">🫘</span>
+                            <span class="bean">🫘</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Coffee Facts -->
+                    <div class="coffee-facts">
+                        <div class="fact-item">
+                            <i class="fas fa-code"></i>
+                            <span>1 Coffee = 2 Hours of Coding</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Fuels Creative Ideas</span>
+                        </div>
+                        <div class="fact-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Shows You Care</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coffee Selector -->
+                <div class="coffee-selector" data-aos="fade-left">
+                    <div class="selector-card">
+                        <h3 class="selector-title">
+                            <i class="fas fa-mug-hot"></i>
+                            Select Coffee Amount
+                        </h3>
+                        
+                        <!-- Coffee Counter -->
+                        <div class="coffee-counter">
+                            <button class="counter-btn minus" id="coffeeMinusBtn">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <div class="counter-display">
+                                <span class="counter-value" id="coffeeCounterValue">1</span>
+                                <span class="counter-emoji">☕</span>
+                            </div>
+                            <button class="counter-btn plus" id="coffeePlusBtn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        
+                        <!-- Quick Select Buttons -->
+                        <div class="quick-select">
+                            <button class="quick-btn" data-count="1">
+                                <span class="quick-emoji">☕</span>
+                                <span class="quick-text">1 Coffee</span>
+                            </button>
+                            <button class="quick-btn" data-count="3">
+                                <span class="quick-emoji">☕☕☕</span>
+                                <span class="quick-text">3 Coffees</span>
+                            </button>
+                            <button class="quick-btn popular" data-count="5">
+                                <span class="popular-tag">Popular</span>
+                                <span class="quick-emoji">☕☕☕☕☕</span>
+                                <span class="quick-text">5 Coffees</span>
+                            </button>
+                            <button class="quick-btn" data-count="10">
+                                <span class="quick-emoji">🎉</span>
+                                <span class="quick-text">10 Coffees</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Price Display -->
+                        <div class="price-display">
+                            <div class="price-row">
+                                <span class="price-label">Price per coffee</span>
+                                <span class="price-value">₹49</span>
+                            </div>
+                            <div class="price-divider"></div>
+                            <div class="price-row total">
+                                <span class="price-label">Total Amount</span>
+                                <span class="price-value" id="totalPrice">₹49</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Name Input -->
+                        <div class="supporter-input">
+                            <label for="supporterName">
+                                <i class="fas fa-user"></i>
+                                Your Name (Optional)
+                            </label>
+                            <input type="text" id="supporterName" placeholder="Anonymous Supporter">
+                        </div>
+                        
+                        <!-- Message Input -->
+                        <div class="supporter-input">
+                            <label for="supporterMessage">
+                                <i class="fas fa-comment"></i>
+                                Leave a Message (Optional)
+                            </label>
+                            <textarea id="supporterMessage" placeholder="Thanks for the awesome projects!" rows="3"></textarea>
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button class="btn btn-coffee btn-large" id="buyCoffeeBtn">
+                            <i class="fas fa-mug-hot"></i>
+                            <span>Buy <span id="coffeeCountText">1</span> Coffee</span>
+                            <span class="btn-price" id="btnPrice">₹49</span>
+                        </button>
+                        
+                        <!-- Secure Badge -->
+                        <div class="secure-badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Payment via UPI/Cards</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         UPI PAYMENT SECTION
+    ============================================= -->
+    <section class="payment section" id="payment">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-qrcode"></i>
+                    Easy Payment
+                </span>
+                <h2 class="section-title">
+                    Pay via <span class="gradient-text">UPI</span>
+                </h2>
+                <p class="section-subtitle">
+                    Scan the QR code or use UPI ID for instant payment
+                </p>
+            </div>
+
+            <div class="payment-container">
+                <!-- QR Code Card -->
+                <div class="qr-card" data-aos="fade-right">
+                    <div class="qr-glow"></div>
+                    <div class="qr-content">
+                        <div class="qr-header">
+                            <div class="upi-logo">
+                                <img src="assests/UPI.png" alt="UPI Logo">
+                            </div>
+                            <h3>Scan & Pay</h3>
+                        </div>
+                        
+<div class="qr-image-wrapper">
+    <div class="qr-frame">
+        <div class="corner corner-tl"></div>
+        <div class="corner corner-tr"></div>
+        <div class="corner corner-bl"></div>
+        <div class="corner corner-br"></div>
+
+        <!-- QR Image -->
+        <img src="assests/qr.png" alt="QR Code" class="qr-image" />
+    </div>
+
+    <!-- Scanning Line -->
+    <div class="scan-line"></div>
+</div>
+
+                        
+                        <p class="qr-instruction">
+                            Open any UPI app and scan this QR code
+                        </p>
+                        
+                        <!-- Supported Apps -->
+                        <div class="upi-apps">
+                            <div class="app-icon" data-tooltip="Google Pay">
+                                <i class="fab fa-google-pay"></i>
+                            </div>
+                            <div class="app-icon" data-tooltip="PhonePe">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="app-icon" data-tooltip="Paytm">
+                                <i class="fas fa-wallet"></i>
+                            </div>
+                            <div class="app-icon" data-tooltip="BHIM">
+                                <i class="fas fa-university"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- UPI ID Card -->
+                <div class="upi-card" data-aos="fade-left">
+                    <div class="upi-card-content">
+                        <div class="upi-icon">
+                            <i class="fas fa-at"></i>
+                        </div>
+                        <h3>Or Use UPI ID</h3>
+                        <p>Copy the UPI ID below and pay directly</p>
+                        
+                        <div class="upi-id-box">
+                            <span class="upi-id" id="upiId">9546983729@fam</span>
+                            <button class="copy-btn" id="copyUpiBtn" data-copy="9546983729@fam">
+                                <i class="fas fa-copy"></i>
+                                <span class="copy-text">Copy</span>
+                            </button>
+                        </div>
+                        
+                        <!-- Payment Steps -->
+                        <div class="payment-steps">
+                            <h4>How to Pay:</h4>
+                            <div class="step">
+                                <div class="step-number">1</div>
+                                <span>Open your UPI app</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">2</div>
+                                <span>Click on "Pay" or "Send Money"</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">3</div>
+                                <span>Enter UPI ID or scan QR</span>
+                            </div>
+                            <div class="step">
+                                <div class="step-number">4</div>
+                                <span>Enter amount & pay!</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Quick Amount Buttons -->
+                        <div class="quick-amounts">
+                            <h4>Quick Pay:</h4>
+                            <div class="amount-btns">
+                                <button class="amount-btn" data-amount="49">₹49</button>
+                                <button class="amount-btn" data-amount="99">₹99</button>
+                                <button class="amount-btn" data-amount="199">₹199</button>
+                                <button class="amount-btn" data-amount="499">₹499</button>
+                                <button class="amount-btn custom">Custom</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Payment Methods -->
+            <div class="other-payments" data-aos="fade-up">
+                <h3 class="other-title">Other Payment Methods</h3>
+                <div class="payment-methods">
+                    <div class="payment-method">
+                        <div class="method-icon paypal">
+                            <i class="fab fa-paypal"></i>
+                        </div>
+                        <div class="method-info">
+                            <h4>PayPal</h4>
+                            <p>International payments</p>
+                        </div>
+                        <a href="https://buymeacoffee.com/im_er_abhishek" class="method-btn">Pay Now</a>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="method-icon card">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <div class="method-info">
+                            <h4>Card Payment</h4>
+                            <p>Visa, Mastercard, RuPay</p>
+                        </div>
+                        <a href="https://buymeacoffee.com/im_er_abhishek" class="method-btn">Pay Now</a>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="method-icon bank">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="method-info">
+                            <h4>Bank Transfer</h4>
+                            <p>Direct NEFT/IMPS</p>
+                        </div>
+                        <button class="method-btn" id="showBankDetails">View Details</button>
+                    </div>
+                    
+                    <div class="payment-method">
+                        <div class="method-icon crypto">
+                            <i class="fab fa-bitcoin"></i>
+                        </div>
+                        <div class="method-info">
+                            <h4>Crypto</h4>
+                            <p>Bitcoin, Ethereum</p>
+                        </div>
+                        <a href="https://buymeacoffee.com/im_er_abhishek" class="method-btn">Coming Soon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SUPPORTERS WALL SECTION
+    ============================================= -->
+    <section class="supporters section" id="supporters">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-heart"></i>
+                    Thank You
+                </span>
+                <h2 class="section-title">
+                    Wall of <span class="gradient-text">Supporters</span> 💜
+                </h2>
+                <p class="section-subtitle">
+                    Amazing people who fuel my coding journey
+                </p>
+            </div>
+
+
+            <!-- All Supporters -->
+            <div class="all-supporters" data-aos="fade-up">
+                <h3 class="supporters-subtitle">
+                    <i class="fas fa-users"></i>
+                    Recent Supporters
+                </h3>
+                <div class="supporters-scroll">
+                    <div class="supporters-track">
+                        <!-- Supporter Items (Duplicated for infinite scroll) -->
+                        <div class="supporter-item silver">
+                            <img src="https://ui-avatars.com/api/?name=Sneha+Das&background=bdc3c7&color=2c3e50&size=50" alt="Sneha Das">
+                            <div class="item-info">
+                                <span class="item-name">Sneha Das</span>
+                                <span class="item-coffees">☕ x3</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item bronze">
+                            <img src="https://ui-avatars.com/api/?name=Vikram+Singh&background=cd7f32&color=fff&size=50" alt="Vikram Singh">
+                            <div class="item-info">
+                                <span class="item-name">Vikram Singh</span>
+                                <span class="item-coffees">☕ x1</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item silver">
+                            <img src="https://ui-avatars.com/api/?name=Anjali+Gupta&background=bdc3c7&color=2c3e50&size=50" alt="Anjali Gupta">
+                            <div class="item-info">
+                                <span class="item-name">Anjali Gupta</span>
+                                <span class="item-coffees">☕ x5</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item bronze">
+                            <img src="https://ui-avatars.com/api/?name=Rohan+Jain&background=cd7f32&color=fff&size=50" alt="Rohan Jain">
+                            <div class="item-info">
+                                <span class="item-name">Rohan Jain</span>
+                                <span class="item-coffees">☕ x2</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item">
+                            <img src="https://ui-avatars.com/api/?name=Anonymous&background=667eea&color=fff&size=50" alt="Anonymous">
+                            <div class="item-info">
+                                <span class="item-name">Anonymous</span>
+                                <span class="item-coffees">☕ x1</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item silver">
+                            <img src="https://ui-avatars.com/api/?name=Neha+Verma&background=bdc3c7&color=2c3e50&size=50" alt="Neha Verma">
+                            <div class="item-info">
+                                <span class="item-name">Neha Verma</span>
+                                <span class="item-coffees">☕ x3</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item bronze">
+                            <img src="https://ui-avatars.com/api/?name=Karan+Mehta&background=cd7f32&color=fff&size=50" alt="Karan Mehta">
+                            <div class="item-info">
+                                <span class="item-name">Karan Mehta</span>
+                                <span class="item-coffees">☕ x1</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item">
+                            <img src="https://ui-avatars.com/api/?name=Pooja+Shah&background=667eea&color=fff&size=50" alt="Pooja Shah">
+                            <div class="item-info">
+                                <span class="item-name">Pooja Shah</span>
+                                <span class="item-coffees">☕ x2</span>
+                            </div>
+                        </div>
+                        <!-- Duplicate for infinite scroll -->
+                        <div class="supporter-item silver">
+                            <img src="https://ui-avatars.com/api/?name=Sneha+Das&background=bdc3c7&color=2c3e50&size=50" alt="Sneha Das">
+                            <div class="item-info">
+                                <span class="item-name">Sneha Das</span>
+                                <span class="item-coffees">☕ x3</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item bronze">
+                            <img src="https://ui-avatars.com/api/?name=Vikram+Singh&background=cd7f32&color=fff&size=50" alt="Vikram Singh">
+                            <div class="item-info">
+                                <span class="item-name">Vikram Singh</span>
+                                <span class="item-coffees">☕ x1</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item silver">
+                            <img src="https://ui-avatars.com/api/?name=Anjali+Gupta&background=bdc3c7&color=2c3e50&size=50" alt="Anjali Gupta">
+                            <div class="item-info">
+                                <span class="item-name">Anjali Gupta</span>
+                                <span class="item-coffees">☕ x5</span>
+                            </div>
+                        </div>
+                        <div class="supporter-item bronze">
+                            <img src="https://ui-avatars.com/api/?name=Rohan+Jain&background=cd7f32&color=fff&size=50" alt="Rohan Jain">
+                            <div class="item-info">
+                                <span class="item-name">Rohan Jain</span>
+                                <span class="item-coffees">☕ x2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Be Next CTA -->
+            <div class="be-next" data-aos="fade-up">
+                <div class="be-next-content">
+                    <div class="be-next-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Be the Next Supporter!</h3>
+                    <p>Join these amazing people and help fuel my coding journey</p>
+                    <a href="#coffee" class="btn btn-primary">
+                        <i class="fas fa-heart"></i>
+                        Support Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FUNDING GOALS SECTION
+    ============================================= -->
+    <section class="goals section" id="goals">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-bullseye"></i>
+                    Goals
+                </span>
+                <h2 class="section-title">
+                    Funding <span class="gradient-text">Goals</span>
+                </h2>
+                <p class="section-subtitle">
+                    See how your support helps achieve these milestones
+                </p>
+            </div>
+
+            <div class="goals-container">
+                <!-- Current Goal Progress -->
+                <div class="current-goal" data-aos="fade-up">
+                    <div class="goal-header">
+                        <div class="goal-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="goal-info">
+                            <h3>Current Goal: New Laptop for Development</h3>
+                            <p>Help me upgrade my development setup for better productivity</p>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" style="--progress: 25%;">
+                                <div class="progress-glow"></div>
+                            </div>
+                            <div class="progress-markers">
+                                <span class="marker" style="left: 25%;">25%</span>
+                                <span class="marker" style="left: 50%;">50%</span>
+                                <span class="marker" style="left: 75%;">75%</span>
+                            </div>
+                        </div>
+                        <div class="progress-stats">
+                            <div class="stat">
+                                <span class="stat-value">₹10,500</span>
+                                <span class="stat-label">Raised</span>
+                            </div>
+                            <div class="stat percentage">
+                                <span class="stat-value">25%</span>
+                                <span class="stat-label">Complete</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">₹50,000</span>
+                                <span class="stat-label">Goal</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="goal-cta">
+                        <a href="#coffee" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Help Reach This Goal
+                        </a>
+                    </div>
+                </div>
+
+                <!-- All Goals -->
+                <div class="goals-grid">
+                    <!-- Goal 1 - Completed -->
+                    <div class="goal-card completed" data-aos="fade-up" data-aos-delay="100">
+                        <div class="goal-status">
+                            <i class="fas fa-check-circle"></i>
+                            progress
+                        </div>
+                        <div class="goal-card-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h4>Domain & Hosting</h4>
+                        <p>Yearly hosting and domain costs</p>
+                        <div class="goal-amount">
+                            <span class="raised">₹50</span>
+                            <span class="target">/ ₹5,000</span>
+                        </div>
+                        <div class="goal-bar">
+                            <div class="bar-fill" style="width: 1%;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Goal 2 - In Progress -->
+                    <div class="goal-card active" data-aos="fade-up" data-aos-delay="200">
+                        <div class="goal-status">
+                            <i class="fas fa-spinner fa-spin"></i>
+                            In Progress
+                        </div>
+                        <div class="goal-card-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <h4>New Laptop</h4>
+                        <p>Upgrade development machine</p>
+                        <div class="goal-amount">
+                            <span class="raised">₹10,500</span>
+                            <span class="target">/ ₹50,000</span>
+                        </div>
+                        <div class="goal-bar">
+                            <div class="bar-fill" style="width: 25%;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Goal 3 - Upcoming -->
+                    <div class="goal-card upcoming" data-aos="fade-up" data-aos-delay="300">
+                        <div class="goal-status">
+                            <i class="fas fa-clock"></i>
+                            Upcoming
+                        </div>
+                        <div class="goal-card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Course Subscriptions</h4>
+                        <p>Premium learning resources</p>
+                        <div class="goal-amount">
+                            <span class="raised">₹0</span>
+                            <span class="target">/ ₹15,000</span>
+                        </div>
+                        <div class="goal-bar">
+                            <div class="bar-fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Goal 4 - Upcoming -->
+                    <div class="goal-card upcoming" data-aos="fade-up" data-aos-delay="400">
+                        <div class="goal-status">
+                            <i class="fas fa-clock"></i>
+                            Upcoming
+                        </div>
+                        <div class="goal-card-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h4>Premium Tools</h4>
+                        <p>Development tools & software</p>
+                        <div class="goal-amount">
+                            <span class="raised">₹0</span>
+                            <span class="target">/ ₹10,000</span>
+                        </div>
+                        <div class="goal-bar">
+                            <div class="bar-fill" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What Your Support Does -->
+                <div class="support-impact" data-aos="fade-up">
+                    <h3 class="impact-title">
+                        <i class="fas fa-magic"></i>
+                        What Your Support Enables
+                    </h3>
+                    <div class="impact-grid">
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h4>More Projects</h4>
+                            <p>Create more open-source tools and apps</p>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-book"></i>
+                            </div>
+                            <h4>Better Learning</h4>
+                            <p>Access premium courses and resources</p>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-video"></i>
+                            </div>
+                            <h4>Content Creation</h4>
+                            <p>Tutorials and educational content</p>
+                        </div>
+                        <div class="impact-item">
+                            <div class="impact-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h4>Infrastructure</h4>
+                            <p>Keep projects running smoothly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        <!-- ============================================
+         FAQ SECTION
+    ============================================= -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">
+                    <i class="fas fa-question-circle"></i>
+                    Questions
+                </span>
+                <h2 class="section-title">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+                <p class="section-subtitle">
+                    Got questions? We've got answers!
+                </p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-list" data-aos="fade-up">
+                    <!-- FAQ Item 1 -->
+                    <div class="faq-item active">
+                        <button class="faq-question">
+                            <span class="question-icon">
+                                <i class="fas fa-mug-hot"></i>
+                            </span>
+                            <span class="question-text">What happens when I buy a coffee?</span>
+                            <span class="question-toggle">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                When you buy me a coffee, you're directly supporting my development journey! 
+                                Your contribution helps me:
+                            </p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> Dedicate more time to open-source projects</li>
+                                <li><i class="fas fa-check"></i> Create better tools and applications</li>
+                                <li><i class="fas fa-check"></i> Learn new technologies and skills</li>
+                                <li><i class="fas fa-check"></i> Keep existing projects running and updated</li>
+                            </ul>
+                            <p>You'll also get a shoutout on the supporters wall! ☕</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="question-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </span>
+                            <span class="question-text">Is my payment secure?</span>
+                            <span class="question-toggle">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Absolutely! All payments are processed through secure payment gateways:
+                            </p>
+                            <ul>
+                                <li><i class="fas fa-check"></i> UPI payments are protected by your bank's security</li>
+                                <li><i class="fas fa-check"></i> Card payments use SSL encryption</li>
+                                <li><i class="fas fa-check"></i> PayPal offers buyer protection</li>
+                                <li><i class="fas fa-check"></i> I never store your payment details</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="question-icon">
+                                <i class="fas fa-redo"></i>
+                            </span>
+                            <span class="question-text">Can I get a refund?</span>
+                            <span class="question-toggle">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Since this is a voluntary support/donation, refunds are generally not provided. 
+                                However, if you made a payment by mistake or there was a technical error, 
+                                please contact me within 24 hours and I'll do my best to help resolve the issue.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="question-icon">
+                                <i class="fas fa-crown"></i>
+                            </span>
+                            <span class="question-text">What are the sponsor tier benefits?</span>
+                            <span class="question-toggle">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Each tier comes with exclusive perks:</p>
+                            <ul>
+                                <li><i class="fas fa-medal"></i> <strong>Bronze (₹99):</strong> Thank you message, Name on supporters list</li>
+                                <li><i class="fas fa-gem"></i> <strong>Silver (₹249):</strong> + Highlighted on wall, Early access, Discord role</li>
+                                <li><i class="fas fa-crown"></i> <strong>Gold (₹499):</strong> + Priority support, Credits in projects, Feature requests</li>
+                                <li><i class="fas fa-gem"></i> <strong>Diamond (₹999):</strong> + 1-on-1 chat, Custom help, Logo on website</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 5 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="question-icon">
+                                <i class="fas fa-user-secret"></i>
+                            </span>
+                            <span class="question-text">Can I donate anonymously?</span>
+                            <span class="question-toggle">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Yes! You can absolutely donate anonymously. When making a payment, 
+                                simply leave the name field empty or write "Anonymous". 
+                                Your privacy is respected and you'll appear as "Anonymous Supporter" on the wall.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 6 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="question-icon">
+                                <i class="fas fa-globe"></i>
+                            </span>
+                            <span class="question-text">Do you accept international payments?</span>
+                            <span class="question-toggle">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>
+                                Yes! I accept international payments through:
+                            </p>
+                            <ul>
+                                <li><i class="fab fa-paypal"></i> PayPal (most countries)</li>
+                                <li><i class="fas fa-credit-card"></i> International credit/debit cards</li>
+                                <li><i class="fab fa-bitcoin"></i> Cryptocurrency (coming soon)</li>
+                            </ul>
+                            <p>UPI is only available for Indian bank accounts.</p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 7 -->
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span class="question-icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span class="question-text">How can I contact you?</span>
+                            <span class="question-toggle">
+                                <i class="fas fa-plus"></i>
+                                <i class="fas fa-minus"></i>
+                            </span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You can reach me through multiple channels:</p>
+                            <ul>
+                                <li><i class="fas fa-envelope"></i> Email: abhishekyadav954698@gmail.com</li>
+                                <li><i class="fab fa-whatsapp"></i> WhatsApp: +91 9546983729</li>
+                                <li><i class="fab fa-instagram"></i> Instagram: @naturelensbyabhi</li>
+                                <li><i class="fab fa-github"></i> GitHub: @erabhishek12</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ Illustration -->
+                <div class="faq-illustration" data-aos="fade-left">
+                    <div class="illustration-wrapper">
+                        <div class="illustration-circle"></div>
+                        <div class="illustration-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="floating-question q1">?</div>
+                        <div class="floating-question q2">?</div>
+                        <div class="floating-question q3">?</div>
+                    </div>
+                    <div class="still-questions">
+                        <h3>Still have questions?</h3>
+                        <p>Feel free to reach out directly!</p>
+                        <a href="mailto:abhishekyadav954698@gmail.com" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT CTA SECTION
+    ============================================= -->
+    <section class="contact-cta section" id="contact-cta">
+        <div class="container">
+            <div class="cta-wrapper" data-aos="fade-up">
+                <div class="cta-bg">
+                    <div class="cta-blob blob-1"></div>
+                    <div class="cta-blob blob-2"></div>
+                    <div class="cta-particles">
+                        <span></span><span></span><span></span>
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                
+                <div class="cta-content">
+                    <div class="cta-emoji">🚀</div>
+                    <h2 class="cta-title">Ready to Support?</h2>
+                    <p class="cta-text">
+                        Every contribution, big or small, helps me continue creating amazing projects. 
+                        Your support means the world to me! 💜
+                    </p>
+                    
+                    <div class="cta-buttons">
+                        <a href="#coffee" class="btn btn-coffee btn-large">
+                            <i class="fas fa-mug-hot"></i>
+                            Buy Me a Coffee
+                        </a>
+                        <a href="#tiers" class="btn btn-gold btn-large">
+                            <i class="fas fa-crown"></i>
+                            Become a Sponsor
+                        </a>
+                    </div>
+                    
+                    <div class="cta-trust">
+                        <div class="trust-item">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-heart"></i>
+                            <span>43+ Supporters</span>
+                        </div>
+                        <div class="trust-item">
+                            <i class="fas fa-star"></i>
+                            <span>100% Goes to Projects</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         FOOTER
+    ============================================= -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+                <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1380,90 1440,60 L1440,120 L0,120 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+        
+        <div class="container">
+            <div class="footer-content">
+                <!-- Footer Brand -->
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <i class="fas fa-mug-hot"></i>
+                        <span>Support Me</span>
+                    </a>
+                    <p class="footer-tagline">
+                        Fueling code with coffee, one cup at a time. ☕
+                    </p>
+                    <div class="footer-socials">
+                        <a href="https://github.com/erabhishek12" target="_blank" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/naturelensbyabhi" target="_blank" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/919546983729" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="mailto:abhishekyadav954698@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#tiers">Support Tiers</a></li>
+                        <li><a href="#coffee">Buy Coffee</a></li>
+                        <li><a href="#payment">Payment Methods</a></li>
+                        <li><a href="#supporters">Supporters</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <!-- Projects -->
+                <div class="footer-links">
+                    <h4>My Projects</h4>
+                    <ul>
+                        <li><a href="https://erabhishek12.github.io/study-hub-promo" target="_blank">Study Hub</a></li>
+                        <li><a href="https://abhi-k-multi-tool-box.vercel.app/" target="_blank">Multi Tool Box</a></li>
+                        <li><a href="https://erabhishek12.github.io/akstudyai/" target="_blank">Study Helper AI</a></li>
+                        <li><a href="index.html">View All Projects</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div class="footer-contact">
+                    <h4>Get In Touch</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>abhishekyadav954698@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+91 9546983729</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>India</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © <span id="currentYear">2025</span> Abhishek Kumar. Made with 
+                    <i class="fas fa-heart heart-beat"></i> & <i class="fas fa-mug-hot"></i>
+                </p>
+                <div class="footer-bottom-links">
+                    <a href="index.html">Portfolio</a>
+                    <span>•</span>
+                    <a href="#">Privacy Policy</a>
+                    <span>•</span>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============================================
+         BACK TO TOP BUTTON
+    ============================================= -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+        <svg class="progress-ring" viewBox="0 0 100 100">
+            <circle class="progress-ring-circle" cx="50" cy="50" r="45"/>
+        </svg>
+    </button>
+
+    <!-- ============================================
+         TOAST CONTAINER
+    ============================================= -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- ============================================
+         BANK DETAILS MODAL
+    ============================================= -->
+    <div class="modal" id="bankModal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="closeBankModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-icon">
+                <i class="fas fa-university"></i>
+            </div>
+            <h3>Bank Transfer Details</h3>
+            <div class="bank-details">
+                <div class="bank-row">
+                    <span class="bank-label">Bank Name</span>
+                    <span class="bank-value">UCO Bank</span>
+                </div>
+                <div class="bank-row">
+                    <span class="bank-label">Account Holder</span>
+                    <span class="bank-value">Abhishek Kumar</span>
+                </div>
+                <div class="bank-row">
+                    <span class="bank-label">Account Number</span>
+                    <span class="bank-value">14793211137030</span>
+                    <button class="copy-small" data-copy="14793211137030">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+                <div class="bank-row">
+                    <span class="bank-label">IFSC Code</span>
+                    <span class="bank-value">UCBA000147932</span>
+                    <button class="copy-small" data-copy="UCBA000147932">
+                        <i class="fas fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+            <p class="modal-note">
+                <i class="fas fa-info-circle"></i>
+                Please add your name in the payment description
+            </p>
+        </div>
+    </div>
+
+    <!-- ============================================
+         SCRIPTS
+    ============================================= -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    
+    <script>
+/* ============================================
+   SUPPORT PAGE - COMPLETE JAVASCRIPT
+============================================ */
+
+'use strict';
+
+// ===== DOM Elements =====
+const header = document.getElementById('header');
+const themeToggle = document.getElementById('themeToggle');
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+const backToTop = document.getElementById('backToTop');
+const toastContainer = document.getElementById('toastContainer');
+
+// Coffee Counter
+const coffeeMinusBtn = document.getElementById('coffeeMinusBtn');
+const coffeePlusBtn = document.getElementById('coffeePlusBtn');
+const coffeeCounterValue = document.getElementById('coffeeCounterValue');
+const totalPrice = document.getElementById('totalPrice');
+const coffeeCountText = document.getElementById('coffeeCountText');
+const btnPrice = document.getElementById('btnPrice');
+const quickBtns = document.querySelectorAll('.quick-btn');
+const buyCoffeeBtn = document.getElementById('buyCoffeeBtn');
+
+// UPI
+const copyUpiBtn = document.getElementById('copyUpiBtn');
+const copyBtns = document.querySelectorAll('.copy-btn, .copy-small');
+
+// Bank Modal
+const bankModal = document.getElementById('bankModal');
+const showBankDetails = document.getElementById('showBankDetails');
+const closeBankModal = document.getElementById('closeBankModal');
+
+// FAQ
+const faqItems = document.querySelectorAll('.faq-item');
+
+// ===== Configuration =====
+const COFFEE_PRICE = 49;
+let coffeeCount = 1;
+
+// ===== Initialize =====
+document.addEventListener('DOMContentLoaded', () => {
+    initTheme();
+    initAOS();
+    updateCoffeePrice();
+    initCounterAnimations();
+    
+    // Set current year
+    const currentYear = document.getElementById('currentYear');
+    if (currentYear) {
+        currentYear.textContent = new Date().getFullYear();
+    }
+});
+
+// ===== Theme Toggle =====
+function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    } else if (systemPrefersDark) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+}
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+        
+        showToast('success', 'Theme Changed', `Switched to ${newTheme} mode`);
+    });
+}
+
+// ===== Header Scroll Effect =====
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        header.classList.add('scrolled');
+    } else {
+        header.classList.remove('scrolled');
+    }
+    
+    // Back to top visibility
+    if (backToTop) {
+        if (window.scrollY > 500) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+        
+        // Progress ring
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const scrollPercent = (scrollTop / docHeight) * 100;
+        const circle = backToTop.querySelector('.progress-ring-circle');
+        if (circle) {
+            const circumference = 283;
+            const offset = circumference - (scrollPercent / 100) * circumference;
+            circle.style.strokeDashoffset = offset;
+        }
+    }
+});
+
+// ===== Back to Top =====
+if (backToTop) {
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// ===== Mobile Navigation =====
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navToggle.classList.toggle('active');
+        navLinks.classList.toggle('show');
+    });
+}
+
+// Close mobile nav on link click
+document.querySelectorAll('.nav-link').forEach(link => {
+    link.addEventListener('click', () => {
+        navToggle?.classList.remove('active');
+        navLinks?.classList.remove('show');
+    });
+});
+
+// ===== Coffee Counter =====
+function updateCoffeePrice() {
+    const total = coffeeCount * COFFEE_PRICE;
+    
+    if (coffeeCounterValue) coffeeCounterValue.textContent = coffeeCount;
+    if (totalPrice) totalPrice.textContent = `₹${total}`;
+    if (coffeeCountText) coffeeCountText.textContent = coffeeCount;
+    if (btnPrice) btnPrice.textContent = `₹${total}`;
+    
+    // Update quick buttons active state
+    quickBtns.forEach(btn => {
+        const count = parseInt(btn.dataset.count);
+        if (count === coffeeCount) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+if (coffeeMinusBtn) {
+    coffeeMinusBtn.addEventListener('click', () => {
+        if (coffeeCount > 1) {
+            coffeeCount--;
+            updateCoffeePrice();
+            animateCounter('minus');
+        }
+    });
+}
+
+if (coffeePlusBtn) {
+    coffeePlusBtn.addEventListener('click', () => {
+        if (coffeeCount < 99) {
+            coffeeCount++;
+            updateCoffeePrice();
+            animateCounter('plus');
+        }
+    });
+}
+
+// Quick select buttons
+quickBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const count = parseInt(btn.dataset.count);
+        if (count) {
+            coffeeCount = count;
+            updateCoffeePrice();
+            animateCounter('set');
+        }
+    });
+});
+
+function animateCounter(type) {
+    const display = document.querySelector('.counter-display');
+    if (display) {
+        display.style.transform = 'scale(1.1)';
+        setTimeout(() => {
+            display.style.transform = 'scale(1)';
+        }, 150);
+    }
+}
+
+// Buy Coffee Button
+if (buyCoffeeBtn) {
+    buyCoffeeBtn.addEventListener('click', () => {
+        const name = document.getElementById('supporterName')?.value || 'Anonymous';
+        const message = document.getElementById('supporterMessage')?.value || '';
+        const total = coffeeCount * COFFEE_PRICE;
+        
+        // Here you would integrate with actual payment
+        // For now, show a toast and redirect to UPI
+        showToast('info', 'Redirecting...', `Opening payment for ₹${total}`);
+        
+        // Simulate redirect to payment
+        setTimeout(() => {
+            // You can add UPI deep link here
+            // window.location.href = `upi://pay?pa=abhishekyadav954698@okicici&pn=Abhishek&am=${total}&cu=INR`;
+            
+            const paymentSection = document.getElementById('payment');
+            if (paymentSection) {
+                paymentSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 1000);
+    });
+}
+
+// ===== Copy to Clipboard =====
+async function copyToClipboard(text) {
+    try {
+        await navigator.clipboard.writeText(text);
+        return true;
+    } catch (err) {
+        // Fallback
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+            document.execCommand('copy');
+            document.body.removeChild(textarea);
+            return true;
+        } catch (e) {
+            document.body.removeChild(textarea);
+            return false;
+        }
+    }
+}
+
+copyBtns.forEach(btn => {
+    btn.addEventListener('click', async () => {
+        const textToCopy = btn.dataset.copy;
+        const success = await copyToClipboard(textToCopy);
+        
+        if (success) {
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-check"></i><span class="copy-text">Copied!</span>';
+            btn.style.background = '#10b981';
+            
+            showToast('success', 'Copied!', 'Text copied to clipboard');
+            
+            setTimeout(() => {
+                btn.innerHTML = originalHTML;
+                btn.style.background = '';
+            }, 2000);
+        } else {
+            showToast('error', 'Failed', 'Could not copy to clipboard');
+        }
+    });
+});
+
+// ===== FAQ Accordion =====
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    
+    question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all items
+        faqItems.forEach(i => i.classList.remove('active'));
+        
+        // Toggle current item
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
+// ===== Bank Modal =====
+if (showBankDetails) {
+    showBankDetails.addEventListener('click', () => {
+        bankModal?.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    });
+}
+
+if (closeBankModal) {
+    closeBankModal.addEventListener('click', () => {
+        bankModal?.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+}
+
+// Close modal on overlay click
+if (bankModal) {
+    bankModal.querySelector('.modal-overlay')?.addEventListener('click', () => {
+        bankModal.classList.remove('active');
+        document.body.style.overflow = '';
+    });
+}
+
+// ===== Toast Notifications =====
+function showToast(type = 'info', title = '', message = '', duration = 4000) {
+    if (!toastContainer) return;
+    
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    
+    const icons = {
+        success: 'fa-check-circle',
+        error: 'fa-times-circle',
+        info: 'fa-info-circle',
+        warning: 'fa-exclamation-circle'
+    };
+    
+    toast.innerHTML = `
+        <div class="toast-icon">
+            <i class="fas ${icons[type] || icons.info}"></i>
+        </div>
+        <div class="toast-content">
+            <h4 class="toast-title">${title}</h4>
+            <p class="toast-message">${message}</p>
+        </div>
+        <button class="toast-close">
+            <i class="fas fa-times"></i>
+        </button>
+    `;
+    
+    toastContainer.appendChild(toast);
+    
+    // Close button
+    toast.querySelector('.toast-close').addEventListener('click', () => {
+        removeToast(toast);
+    });
+    
+    // Auto remove
+    setTimeout(() => removeToast(toast), duration);
+}
+
+function removeToast(toast) {
+    if (!toast) return;
+    toast.classList.add('removing');
+    setTimeout(() => toast.remove(), 300);
+}
+
+// ===== Counter Animations =====
+function initCounterAnimations() {
+    const counters = document.querySelectorAll('.stat-value[id]');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateNumber(entry.target);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    counters.forEach(counter => {
+        if (counter.id === 'coffeeCount' || counter.id === 'supporterCount') {
+            observer.observe(counter);
+        }
+    });
+}
+
+function animateNumber(element) {
+    const target = parseInt(element.textContent);
+    if (isNaN(target)) return;
+    
+    let current = 0;
+    const duration = 2000;
+    const step = target / (duration / 16);
+    
+    const update = () => {
+        current += step;
+        if (current < target) {
+            element.textContent = Math.floor(current);
+            requestAnimationFrame(update);
+        } else {
+            element.textContent = target;
+        }
+    };
+    
+    update();
+}
+
+// ===== Smooth Scroll =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href !== '#') {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+                const headerHeight = header?.offsetHeight || 80;
+                const position = target.getBoundingClientRect().top + window.scrollY - headerHeight;
+                window.scrollTo({ top: position, behavior: 'smooth' });
+            }
+        }
+    });
+});
+
+// ===== Tier Buttons =====
+document.querySelectorAll('.tier-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const card = btn.closest('.tier-card');
+        const tierName = card.querySelector('.tier-name')?.textContent || 'Tier';
+        const tierPrice = card.querySelector('.amount')?.textContent || '0';
+        
+        showToast('info', `${tierName} Selected!`, `Redirecting to payment for ₹${tierPrice}`);
+        
+        setTimeout(() => {
+            const paymentSection = document.getElementById('payment');
+            if (paymentSection) {
+                paymentSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }, 1000);
+    });
+});
+
+// ===== Amount Buttons =====
+document.querySelectorAll('.amount-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const amount = btn.dataset.amount;
+        if (amount) {
+            showToast('info', 'Amount Selected', `Please pay ₹${amount} using UPI or QR code`);
+        } else {
+            showToast('info', 'Custom Amount', 'Enter any amount you wish to pay');
+        }
+    });
+});
+
+// ===== Initialize AOS =====
+function initAOS() {
+    if (typeof AOS !== 'undefined') {
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50,
+            disable: window.innerWidth < 768 ? 'mobile' : false
+        });
+    }
+}
+
+// ===== Parallax on Mouse Move =====
+document.addEventListener('mousemove', (e) => {
+    const blobs = document.querySelectorAll('.hero-blob, .cta-blob');
+    const x = (e.clientX / window.innerWidth - 0.5) * 2;
+    const y = (e.clientY / window.innerHeight - 0.5) * 2;
+    
+    blobs.forEach((blob, index) => {
+        const speed = (index + 1) * 10;
+        blob.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+    });
+});
+
+// ===== Console Easter Egg =====
+console.log(`
+%c☕ Thank You for Checking Out My Support Page! ☕
+%c━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+%c💜 Every coffee helps me create more awesome projects!
+%c📧 abhishekyadav954698@gmail.com
+%c🌐 github.com/erabhishek12
+`, 
+'color: #c9a66b; font-size: 18px; font-weight: bold;',
+'color: #667eea;',
+'color: #764ba2;',
+'color: #00d4ff;',
+'color: #10b981;'
+);
+    </script>
+</body>
+
+</html>
