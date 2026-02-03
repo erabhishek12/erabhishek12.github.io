@@ -1,0 +1,60 @@
+
+            <!-- Top Supporters -->
+            <div class="top-supporters" data-aos="fade-up">
+                <h3 class="supporters-subtitle">
+                    <i class="fas fa-crown"></i>
+                    Top Supporters
+                </h3>
+                <div class="top-supporters-grid">
+                    <!-- Diamond Supporter -->
+                    <div class="supporter-card diamond">
+                        <div class="supporter-badge">💎 Diamond</div>
+                        <div class="supporter-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Rahul+Sharma&background=667eea&color=fff&size=100" alt="Rahul Sharma">
+                            <div class="avatar-ring"></div>
+                        </div>
+                        <h4 class="supporter-name">Rahul Sharma</h4>
+                        <p class="supporter-amount">₹999</p>
+                        <p class="supporter-message">"Keep building amazing projects! 🚀"</p>
+                        <div class="supporter-date">
+                            <i class="fas fa-calendar"></i>
+                            2 days ago
+                        </div>
+                    </div>
+                    
+                    <!-- Gold Supporter -->
+                    <div class="supporter-card gold">
+                        <div class="supporter-badge">👑 Gold</div>
+                        <div class="supporter-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Priya+Patel&background=fbbf24&color=1a1a2e&size=100" alt="Priya Patel">
+                            <div class="avatar-ring"></div>
+                        </div>
+                        <h4 class="supporter-name">Priya Patel</h4>
+                        <p class="supporter-amount">₹499</p>
+                        <p class="supporter-message">"Love your Study Hub app!"</p>
+                        <div class="supporter-date">
+                            <i class="fas fa-calendar"></i>
+                            1 week ago
+                        </div>
+                    </div>
+                    
+                    <!-- Gold Supporter -->
+                    <div class="supporter-card gold">
+                        <div class="supporter-badge">👑 Gold</div>
+                        <div class="supporter-avatar">
+                            <img src="https://ui-avatars.com/api/?name=Amit+Kumar&background=fbbf24&color=1a1a2e&size=100" alt="Amit Kumar">
+                            <div class="avatar-ring"></div>
+                        </div>
+                        <h4 class="supporter-name">Amit Kumar</h4>
+                        <p class="supporter-amount">₹499</p>
+                        <p class="supporter-message">"Great work! Keep it up! 💪"</p>
+                        <div class="supporter-date">
+                            <i class="fas fa-calendar"></i>
+                            2 weeks ago
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            line number 4462
