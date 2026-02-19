@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABHI-courses</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="cousrse.css">
+</head>
+<body>
+
+    <!-- ========== LOADING SCREEN ========== -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner">
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+                <div class="spinner-ring"></div>
+            </div>
+            <p class="loader-text">Loading amazing courses<span class="dots"></span></p>
+        </div>
+        <div class="loader-bg"></div>
+    </div>
+
+    <!-- ========== MAIN APPLICATION ========== -->
+    <div id="app" class="app">
+        
+        <!-- Animated Background -->
+        <div class="animated-bg">
+            <div class="bg-orb bg-orb-1"></div>
+            <div class="bg-orb bg-orb-2"></div>
+            <div class="bg-orb bg-orb-3"></div>
+            <div class="bg-grid"></div>
+            <div class="bg-noise"></div>
+        </div>
+
+        <!-- ========== HEADER ========== -->
+        <header class="header" id="header">
+            <div class="header-left">
+                <!-- Breadcrumb Navigation -->
+                <nav class="nav-breadcrumb" id="breadcrumb">
+                    <button class="nav-item active" id="nav-home" data-view="home">
+                        <span class="nav-icon">🏠</span>
+                        <span class="nav-text">All Courses</span>
+                    </button>
+                    
+                    <span class="nav-arrow hidden" id="nav-arrow-1">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </span>
+                    
+                    <button class="nav-item hidden" id="nav-course" data-view="course">
+                        <span class="nav-icon">📚</span>
+                        <span class="nav-text" id="nav-course-text">Course</span>
+                    </button>
+                    
+                    <span class="nav-arrow hidden" id="nav-arrow-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </span>
+                    
+                    <button class="nav-item hidden" id="nav-module" data-view="module">
+                        <span class="nav-icon">📖</span>
+                        <span class="nav-text" id="nav-module-text">Module</span>
+                    </button>
+                </nav>
+            </div>
+            
+            <div class="header-right">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon theme-dark">🌙</span>
+                    <span class="theme-icon theme-light">☀️</span>
+                    <span class="toggle-bg"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- ========== MAIN CONTENT ========== -->
+        <main class="main-layout" id="main">
+            
+            <!-- LEFT PANEL - Course Details -->
+            <aside class="panel panel-left" id="panel-left">
+                <div class="card glass-card details-card">
+                    
+                    <!-- Badge -->
+                    <div class="detail-badge" id="detail-badge">
+                        <span class="badge-icon">✨</span>
+                        <span class="badge-text">Featured Course</span>
+                    </div>
+                    
+                    <!-- Title -->
+                    <h1 class="detail-title" id="detail-title">
+                        Welcome to Learning
+                    </h1>
+                    
+                    <!-- Description -->
+                    <p class="detail-desc" id="detail-desc">
+                        Select a course from the list to see details and start learning.
+                    </p>
+                    
+                    <!-- Stats Grid -->
+                    <div class="stats-grid" id="stats-grid">
+                        <div class="stat-box">
+                            <span class="stat-icon">📚</span>
+                            <span class="stat-value" id="stat-1">-</span>
+                            <span class="stat-label" id="stat-1-label">Modules</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-icon">🎬</span>
+                            <span class="stat-value" id="stat-2">-</span>
+                            <span class="stat-label" id="stat-2-label">Lessons</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-icon">⏱️</span>
+                            <span class="stat-value" id="stat-3">-</span>
+                            <span class="stat-label" id="stat-3-label">Duration</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Price Section -->
+                    <div class="price-section" id="price-section">
+                        <div class="price-info">
+                            <span class="price-label">Price</span>
+                            <span class="price-amount" id="price-amount">FREE</span>
+                        </div>
+                        <span class="price-badge free" id="price-badge">FREE</span>
+                    </div>
+                    
+                    <!-- Action Button -->
+                    <button class="btn-action" id="btn-action">
+                        <span class="btn-text" id="btn-action-text">Get Started</span>
+                        <span class="btn-icon" id="btn-action-icon">→</span>
+                        <span class="btn-shine"></span>
+                    </button>
+                    
+                    <!-- Payment Section (Hidden by default) -->
+                    <div class="payment-section hidden" id="payment-section">
+                        <div class="payment-divider">
+                            <span>Payment Options</span>
+                        </div>
+                        <button class="btn-payment" id="btn-payment">
+                            <span>💳</span>
+                            <span>Purchase Course</span>
+                        </button>
+                        <p class="payment-note">
+                            <span>🔒</span> Secure checkout
+                        </p>
+                    </div>
+                    
+                </div>
+            </aside>
+
+            <!-- CENTER PANEL - Featured Image / Video -->
+            <section class="panel panel-center" id="panel-center">
+                
+                <!-- Featured Image Container -->
+                <div class="featured-container" id="featured-container">
+                    <div class="featured-card" id="featured-card">
+                        <div class="featured-image-wrapper">
+                            <img 
+                                src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=750&fit=crop" 
+                                alt="Course Preview" 
+                                class="featured-image" 
+                                id="featured-image"
+                            >
+                            <div class="featured-overlay"></div>
+                        </div>
+                        
+                        <!-- Play Button (for lessons) -->
+                        <button class="featured-play-btn hidden" id="featured-play-btn">
+                            <span class="play-icon">▶</span>
+                            <span class="play-text">Play Video</span>
+                        </button>
+                        
+                        <!-- Card Glow Effect -->
+                        <div class="featured-glow"></div>
+                    </div>
+                    
+                    <!-- Floating Info Badges -->
+                    <div class="float-badge float-badge-1" id="float-badge-1">
+                        <span>🔥</span>
+                        <span id="float-text-1">Popular</span>
+                    </div>
+                    <div class="float-badge float-badge-2" id="float-badge-2">
+                        <span>⭐</span>
+                        <span id="float-text-2">Top Rated</span>
+                    </div>
+                </div>
+                
+                <!-- Video Player Container (Hidden by default) -->
+                <div class="video-player-container hidden" id="video-container">
+                    <div class="video-player-wrapper">
+                        <button class="video-close-btn" id="video-close-btn">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                        <div class="video-player">
+                            <iframe 
+                                id="video-iframe"
+                                src="" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen
+                            ></iframe>
+                        </div>
+                        <div class="video-info">
+                            <h3 class="video-title" id="video-title">Video Title</h3>
+                            <button class="btn-fullscreen" id="btn-fullscreen">
+                                <span>⛶</span> Fullscreen
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Hint -->
+                <div class="scroll-hint" id="scroll-hint">
+                    <p>Scroll to explore</p>
+                    <div class="scroll-indicator">
+                        <span class="scroll-dot"></span>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- RIGHT PANEL - Course Selector -->
+            <aside class="panel panel-right" id="panel-right">
+                <div class="selector-container">
+                    
+                    <!-- Selector Header -->
+                    <div class="selector-header">
+                        <h2 class="selector-title" id="selector-title">All Courses</h2>
+                        <span class="selector-count" id="selector-count">0 items</span>
+                    </div>
+                    
+                    <!-- Selector List -->
+                    <div class="selector-list-wrapper" id="selector-wrapper">
+                        <div class="selector-list" id="selector-list">
+                            <!-- Items will be generated here -->
+                        </div>
+                    </div>
+                    
+                    <!-- Selector Navigation -->
+                    <div class="selector-nav">
+                        <button class="selector-nav-btn" id="btn-prev" aria-label="Previous">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="15 18 9 12 15 6"></polyline>
+                            </svg>
+                        </button>
+                        <div class="selector-pagination" id="pagination">
+                            <span id="current-page">1</span>
+                            <span>/</span>
+                            <span id="total-pages">1</span>
+                        </div>
+                        <button class="selector-nav-btn" id="btn-next" aria-label="Next">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="9 18 15 12 9 6"></polyline>
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+            </aside>
+
+        </main>
+
+        <!-- ========== TOAST NOTIFICATIONS ========== -->
+        <div class="toast-container" id="toast-container"></div>
+
+    </div>
+
+    <!-- ========== ERROR SCREEN ========== -->
+    <div id="error-screen" class="error-screen hidden">
+        <div class="error-content">
+            <div class="error-icon">😕</div>
+            <h2 class="error-title">Oops! Something went wrong</h2>
+            <p class="error-message" id="error-message">Unable to load courses. Please try again.</p>
+            <button class="btn-action" id="btn-retry">
+                <span class="btn-text">Try Again</span>
+                <span class="btn-icon">↻</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Script -->
+    <script src="app.js"></script>
+</body>
+</html>
